@@ -1,0 +1,31 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Admin lte
+@import '~admin-lte/dist/css/adminlte.min.css';
+
+// Font awesome 
+
+@import '~font-awesome/css/font-awesome.min.css';
+
+
+// Custom css
+
+// toastr
+
+@import "toastr";
+
+@import 'custom';
+
+
+
+.router-link-exact-active{
+    color:#fff!important;
+    background-color: blue!important;
+}

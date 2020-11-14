@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Videos</title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="./images/favicon.png">
+	<!-- All CSS -->
+	<link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./plugins/fontawesome/css/all.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="sticky-top">
+		<!-- Header Top -->
+		<div class="header-top">
+			<div class="container-fluid">
+				<nav class="navbar navbar-expand-lg">
+					<a class="navbar-brand p-0" href="groups.html">
+						<img src="./images/brand-logo.png" alt="brand-logo">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fas fa-bars"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<form class="form-inline mx-auto mt-2 mt-sm-0 position-relative">
+							<input class="form-control ml-sm-2 rounded-pill shadow-none bg-white w-100" type="search"
+								placeholder="Search videos by keyword, artist, etc." aria-label="Search">
+							<button class="btn shadow-none my-2 my-sm-0 position-absolute" type="submit"><i
+									class="fas fa-video pr-1"></i><i class="fas fa-sort-down pr-1"></i><i
+									class="fas text-danger fa-search"></i></button>
+						</form>
+						<ul class="navbar-nav flex-row justify-content-around my-3 my-lg-0 ml-auto">
+							<li class="nav-item mx-1">
+								<a class="nav-link" href="#">
+									<img src="./images/youtube-icon.png" alt="youtube-icon">
+								</a>
+							</li>
+							<li class="nav-item dropdown mx-1">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="./images/menu3.png" alt="menu3">
+								</a>
+								<div class="dropdown-menu py-0 rounded border-0 position-absolute" aria-labelledby="navbarDropdown">
+									<div class="dropdown-menu-head rounded-top p-2 text-white d-flex align-items-center position-relative">
+										<img src="./images/discover_members.png" alt="discover_members" class="mr-2">Follower Requests
+									</div>
+									<div class="dropdown-menu-content d-flex align-items-center mb-1 p-2">
+										<div class="mr-2">
+											<a href="#"><img src="./images/one.png" alt="one"></a>
+										</div>
+										<div class="flex-grow-1">
+											<a href="#">Zahid <span>has followed you</span></a>
+											<div class="my-2">
+												<a href="#" class="dropdown-menu-btn d-inline-block px-3 py-1 text-white">Accept</a>
+												<a href="#" class="dropdown-menu-btn d-inline-block px-3 py-1 border bg-white">Cancel</a>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-menu-content d-flex align-items-center mb-1 p-2">
+										<div class="mr-2">
+											<a href="#"><img src="./images/two.png" alt="two"></a>
+										</div>
+										<div class="flex-grow-1">
+											<a href="#">Azman <span>has followed you</span></a>
+											<div class="my-2">
+												<a href="#" class="dropdown-menu-btn d-inline-block px-3 py-1 text-white">Accept</a>
+												<a href="#" class="dropdown-menu-btn d-inline-block px-3 py-1 border bg-white">Cancel</a>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-menu-content d-flex align-items-center p-2">
+										<div class="mr-2">
+											<a href="#"><img src="./images/three.png" alt="three"></a>
+										</div>
+										<div class="flex-grow-1">
+											<a href="#">Jasmin <span>has followed you</span></a>
+											<div class="my-2">
+												<a href="#" class="dropdown-menu-btn d-inline-block px-3 py-1 text-white">Accept</a>
+												<a href="#" class="dropdown-menu-btn d-inline-block px-3 py-1 border bg-white">Cancel</a>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-footer text-center py-2 rounded-bottom">
+										<a href="#" class="d-inline-block text-dark">View All</a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item mx-1">
+								<a class="nav-link" href="#">
+									<div class="notify">3</div>
+									<i class="fas fa-store nav-link-icon"></i>
+								</a>
+							</li>
+							<li class="nav-item dropdown mx-1">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<div class="notify">3</div>
+									<img src="./images/menu11.png" alt="menu11">
+								</a>
+								<div class="dropdown-menu notify-dropdown-menu py-0 rounded border-0 position-absolute" aria-labelledby="navbarDropdown">
+									<div class="dropdown-menu-head rounded-top p-2 text-white d-flex align-items-center position-relative">
+										<a href="#"><i class="fas fa-cog mr-2"></i></a>Notification
+									</div>
+									<div class="dropdown-menu-content d-flex align-items-center p-2 mb-1">
+										<div class="mr-2">
+											<a href="#"><img src="./images/one.png" alt="one"></a>
+										</div>
+										<div class="flex-grow-1 py-2">
+											<a href="#">Zahid <span>followed you</span></a>
+											<div>
+												<small class="text-muted">4 hours ago</small>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-menu-content d-flex align-items-center p-2 mb-1">
+										<div class="mr-2">
+											<a href="#"><img src="./images/two.png" alt="two"></a>
+										</div>
+										<div class="flex-grow-1 py-2">
+											<a href="#">Azman <span>liked</span> your post</a>
+											<div>
+												<small class="text-muted">Yesterday</small>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-menu-content d-flex align-items-center p-2">
+										<div class="mr-2">
+											<a href="#"><img src="./images/three.png" alt="three"></a>
+										</div>
+										<div class="flex-grow-1 py-2">
+											<a href="#">Jasmin <span>commented on</span> your post</a>
+											<div>
+												<small class="text-muted">4 days ago</small>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-footer text-center py-2 rounded-bottom">
+										<a href="#" class="d-inline-block text-dark">View All</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="profile-nav ml-auto">
+							<a href="posts.html" class="d-flex justify-content-center align-items-center">
+								<b>Maggle</b>
+								<img src="./images/profile2.png" alt="profile2" class="ml-2">
+								<i class="fas fa-sort-down ml-1"></i>
+							</a>
+						</div>
+						<div class="vertical-side-bars d-block d-sm-none">
+							<div class="categories">
+								<div class="categorie-list">
+									<div class="vertical-side-head"><h2 class="my-2">Categories</h2></div>
+									<div class="categorie-items py-3">
+										<a class="d-flex align-items-center" href="#">
+											<div class="img-box">
+												<img src="images/videos.png" class="real-img">
+												<img src="images/videos-red.png" class="hover-img">
+											</div>
+											<p class="mb-0 ml-3">Videos</p>
+										</a>
+									</div>
+									<div class="categorie-items py-3">
+										<a class="d-flex align-items-center" href="#">										
+											<div class="img-box">
+												<img src="images/market_classifieds.png" class="real-img">
+												<img src="images/market_classifieds-red.png" class="hover-img">
+											</div>										
+											<p class="mb-0 ml-3">Market Classifieds</p>
+										</a>
+									</div>
+									<div class="categorie-items py-3">
+										<a class="d-flex align-items-center" href="#">
+											<div class="img-box">
+												<img src="images/twitch_stream.png" class="real-img">
+												<img src="images/twitch_stream-red.png" class="hover-img">
+											</div>									
+											<p class="mb-0 ml-3">Twitch Stream</p>
+										</a>
+									</div>
+									<div class="categorie-items py-3">
+										<a class="d-flex align-items-center" href="#">
+											<div class="img-box">
+												<img src="images/live_stream.png" class="real-img">
+												<img src="images/live_stream-red.png" class="hover-img">
+											</div>
+											<p class="mb-0 ml-3">Live Stream</p>
+										</a>
+									</div>
+									<div class="categorie-items py-3">
+										<a class="d-flex align-items-center" href="#">
+											<div class="img-box">
+												<img src="images/events.png" class="real-img">
+												<img src="images/events-red.png" class="hover-img">
+											</div>
+											<p class="mb-0 ml-3">Events</p>
+										</a>
+									</div>
+									<div class="categorie-items py-3">
+										<a class="d-flex align-items-center" href="#">
+											<div class="img-box">
+												<img src="images/group_channels.png" class="real-img">
+												<img src="images/group_channels-red.png" class="hover-img">
+											</div>
+											<p class="mb-0 ml-3">Group Channels</p>
+										</a>
+									</div>
+									<div class="categorie-items py-3">
+										<a class="d-flex align-items-center" href="#">
+											<div class="img-box">
+												<img src="images/discover_members.png" class="real-img">
+												<img src="images/discover_members-red.png" class="hover-img">
+											</div>
+											<p class="mb-0 ml-3">Discover Members</p>
+										</a>
+									</div>
+									<div class="categorie-items py-3">
+										<a class="d-flex align-items-center" href="#">
+											<div class="img-box">
+												<img src="images/custom_themes.png" class="real-img">
+												<img src="images/custom_themes-red.png" class="hover-img">
+											</div>
+											<p class="mb-0 ml-3">Custom Themes</p>
+										</a>
+									</div>
+									<div class="categorie-items py-3">
+										<a class="d-flex align-items-center" href="#">
+											<div class="img-box">
+												<img src="images/pro_services.png" class="real-img">
+												<img src="images/pro_services-red.png" class="hover-img">
+											</div>
+											<p class="mb-0 ml-3">Pro Services</p>
+										</a>
+									</div>
+									<div class="categorie-items py-3">
+										<a class="d-flex align-items-center" href="#">
+											<div class="img-box">
+												<img src="images/Invite_new.png" class="real-img">
+												<img src="images/Invite_new-red.png" class="hover-img">
+											</div>
+											<p class="mb-0 ml-3">Invite</p>
+										</a>
+									</div>
+									<div class="categorie-items py-3">
+										<a class="d-flex align-items-center" href="#">
+											<div class="img-box">
+												<img src="images/resources.png" class="real-img">
+												<img src="images/resources-red.png" class="hover-img">
+											</div>
+											<p class="mb-0 ml-3">Resources</p>
+										</a>
+									</div>
+									<div class="categorie-items py-3">
+										<a class="d-flex align-items-center" href="#">
+											<div class="img-box">
+												<img src="images/saved.png" class="real-img">
+												<img src="images/saved-red.png" class="hover-img">
+											</div>
+											<p class="mb-0 ml-3">Saved</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="contacts">
+								<div class="vertical-side-head border-top"><h2 class="my-2">Contacts</h2></div>
+								<div class="contacts-items py-3">
+									<a class="d-flex align-items-center active" href="#">
+										<img src="images/five.png" class="mr-1">
+										<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+									</a>
+								</div>
+								<div class="contacts-items py-3">
+									<a class="d-flex align-items-center active" href="#">
+										<img src="images/six.png" class="mr-1">
+										<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+									</a>
+								</div>
+								<div class="contacts-items py-3">
+									<a class="d-flex align-items-center active" href="#">
+										<img src="images/seven.png" class="mr-1">
+										<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+									</a>
+								</div>
+								<div class="contacts-items py-3">
+									<a class="d-flex align-items-center active" href="#">
+										<img src="images/eight.png" class="mr-1">
+										<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+									</a>
+								</div>
+								<div class="contacts-items py-3">
+									<a class="d-flex align-items-center active" href="#">
+										<img src="images/nine.png" class="mr-1">
+										<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+									</a>
+								</div>
+								<div class="contacts-items py-3">
+									<a class="d-flex align-items-center active" href="#">
+										<img src="images/ten.png" class="mr-1">
+										<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+									</a>
+								</div>
+								<div class="contacts-items py-3">
+									<a class="d-flex align-items-center active" href="#">
+										<img src="images/11.png" class="mr-1">
+										<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+									</a>
+								</div>
+								<div class="contacts-items py-3">
+									<a class="d-flex align-items-center active" href="#">
+										<img src="images/12.png" class="mr-1">
+										<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+									</a>
+								</div>
+								<div class="contacts-items py-3 mb-5">
+									<a class="d-flex align-items-center active" href="#">
+										<img src="images/13.png" class="mr-1">
+										<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!-- Header Bottom  -->
+		<div class="header-bottom bg-white">
+			<div class="container-fluid">
+				<div class="row justify-content-between align-items-center px-3">
+					<div class="header-bottom-left d-flex align-items-center">
+						<a href="#" class="d-inline-block mx-3 bar-icon off-canvas-toggoler"><img src="./images/tg.png" alt="tg"></a>
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item">
+								<a href="#" class="mx-2 d-inline-flex align-items-center"><i class="fas fa-bullhorn mr-2"></i>News</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="mx-2 d-inline-flex align-items-center"><img src="./images/menu10.png" alt="menu10" class="mr-2">Groups</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header-bottom-right">
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item mr-2 mr-sm-5"><a href="#"><b>All</b></a></li>
+							<li class="list-inline-item">
+								<a href="#">
+									<img src="./images/tg.png" alt="tg" class="mr-2">
+									<b>USA version</b>
+									<img src="./images/arrow-down.png" alt="arrow-down" class="ml-1">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Off Canvas Sidebar -->
+	<div class="off-canvas-sidebar position-fixed">
+		<div class="about-list">
+			<div class="panel-title">
+				<a class="d-flex align-items-center" href="#">
+					<img src="images/videos.png">
+					<p class="mb-0 ml-3">Videos</p>
+				</a>
+			</div>
+			<div class="panel-title">
+				<a class="d-flex align-items-center" href="#">
+					<img src="images/market_classifieds.png">
+					<p class="mb-0 ml-3">Market Classifieds</p>
+				</a>
+			</div>
+			<div class="panel-title">
+				<a class="d-flex align-items-center" href="#">
+					<img src="images/twitch_stream.png">
+					<p class="mb-0 ml-3">Twitch Stream</p>
+				</a>
+			</div>
+			<div class="panel-title">
+				<a class="d-flex align-items-center" href="#">
+					<img src="images/live_stream.png">
+					<p class="mb-0 ml-3">Live Stream</p>
+				</a>
+			</div>
+			<div class="panel-title">
+				<a class="d-flex align-items-center" href="#">
+					<img src="images/events.png">
+					<p class="mb-0 ml-3">Events</p>
+				</a>
+			</div>
+			<div class="panel-title">
+				<a class="d-flex align-items-center" href="#">
+					<img src="images/group_channels.png">
+					<p class="mb-0 ml-3">Group Channels</p>
+				</a>
+			</div>
+			<div class="panel-title">
+				<a class="d-flex align-items-center" href="#">
+					<img src="images/discover_members.png">
+					<p class="mb-0 ml-3">Discover Members</p>
+				</a>
+			</div>
+			<div class="panel-title">
+				<a class="d-flex align-items-center" href="#">
+					<img src="images/custom_themes.png">
+					<p class="mb-0 ml-3">Custom Themes</p>
+				</a>
+			</div>
+			<div class="panel-title">
+				<a class="d-flex align-items-center" href="#">
+					<img src="images/pro_services.png">
+					<p class="mb-0 ml-3">Pro Services</p>
+				</a>
+			</div>
+			<div class="panel-title">
+				<a class="d-flex align-items-center" href="#">
+					<img src="images/Invite_new.png">
+					<p class="mb-0 ml-3">Invite</p>
+				</a>
+			</div>
+			<div class="panel-title">
+				<a class="d-flex align-items-center" href="#">
+					<img src="images/resources.png">
+					<p class="mb-0 ml-3">Resources</p>
+				</a>
+			</div>
+			<div class="panel-title">
+				<a class="d-flex align-items-center" href="#">
+					<img src="images/saved.png">
+					<p class="mb-0 ml-3">Saved</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Video Page Section -->
+	<div class="post-wrapper py-3">
+		<div class="container-fluid">
+			<div class="row justify-content-between">
+				<!-- Left Sidebar Section -->
+				<aside class="col-lg-1 col-sm-2 pl-0">
+					<div class="post-left d-none d-sm-block position-fixed">
+						<div id="mySidebar" class="sidebar">
+							<div class="fixed-part">
+								<div title="Close" id="myBtn" class="neew">
+									<span>Applications Center</span>
+									<a href="javascript:void(0)" class="left-menu-closebtn">
+										<img src="images/cross.png">
+									</a>
+								</div>
+								<div class="about-list">
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/videos.png">
+											<p class="mb-0 ml-3">Videos</p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/market_classifieds.png">
+											<p class="mb-0 ml-3">Market Classifieds</p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/twitch_stream.png">
+											<p class="mb-0 ml-3">Twitch Stream</p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/live_stream.png">
+											<p class="mb-0 ml-3">Live Stream</p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/events.png">
+											<p class="mb-0 ml-3">Events</p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/group_channels.png">
+											<p class="mb-0 ml-3">Group Channels</p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/discover_members.png">
+											<p class="mb-0 ml-3">Discover Members</p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/custom_themes.png">
+											<p class="mb-0 ml-3">Custom Themes</p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/pro_services.png">
+											<p class="mb-0 ml-3">Pro Services</p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/Invite_new.png">
+											<p class="mb-0 ml-3">Invite</p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/resources.png">
+											<p class="mb-0 ml-3">Resources</p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/saved.png">
+											<p class="mb-0 ml-3">Saved</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="left-menu h-100" title="Open">
+							<ul class="two mb-0">
+								<li>
+									<a href="#" class="mySidebar-toggoler">
+										<img src="images/list-arrow.png" alt="list-arrow" class="toggoler-img">
+									</a>
+								</li>
+								<li>
+									<a href="#" class="mySidebar-toggoler">
+										<img src="images/videos.png" class="real-img">
+										<img src="images/videos-red.png" class="hover-img">
+										<div class="tooltip">videos</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="mySidebar-toggoler">
+										<img src="images/market_classifieds.png" class="real-img">
+										<img src="images/market_classifieds-red.png" class="hover-img">
+										<div class="tooltip">Market</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="mySidebar-toggoler">
+										<img src="images/twitch_stream.png" class="real-img">
+										<img src="images/twitch_stream-red.png" class="hover-img">
+										<div class="tooltip">Stream</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="mySidebar-toggoler">
+										<img src="images/live_stream.png" class="real-img">
+										<img src="images/live_stream-red.png" class="hover-img">
+										<div class="tooltip">Live Stream</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="mySidebar-toggoler">
+										<img src="images/events.png" class="real-img">
+										<img src="images/events-red.png" class="hover-img">
+										<div class="tooltip">Events</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="mySidebar-toggoler">
+										<img src="images/group_channels.png" class="real-img">
+										<img src="images/group_channels-red.png" class="hover-img">
+										<div class="tooltip">Channels</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="mySidebar-toggoler">
+										<img src="images/discover_members.png" class="real-img">
+										<img src="images/discover_members-red.png" class="hover-img">
+										<div class="tooltip">Members</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="mySidebar-toggoler">
+										<img src="images/custom_themes.png" class="real-img">
+										<img src="images/custom_themes-red.png" class="hover-img">
+										<div class="tooltip">Custom</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="mySidebar-toggoler">
+										<img src="images/pro_services.png" class="real-img">
+										<img src="images/pro_services-red.png" class="hover-img">
+										<div class="tooltip">Services</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="mySidebar-toggoler">
+										<img src="images/Invite_new.png" class="real-img">
+										<img src="images/Invite_new-red.png" class="hover-img">
+										<div class="tooltip">Invite</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="mySidebar-toggoler">
+										<img src="images/resources.png" class="real-img">
+										<img src="images/resources-red.png" class="hover-img">
+										<div class="tooltip">Resources</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="mySidebar-toggoler">
+										<img src="images/saved.png" class="real-img">
+										<img src="images/saved-red.png" class="hover-img">
+										<div class="tooltip">Saved</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="create-tab">
+										<i class="fas fa-plus-circle"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="create-container position-fixed border py-2">
+							<h3 class="text-dark pl-2">Create</h3>
+							<div class="create-items">
+								<a href="#" class="d-flex align-items-center p-2" data-toggle="modal" data-target="#createPostModal">
+									<i class="far fa-edit rounded-circle bg-white text-center border"></i>
+									<div class="ml-2">
+										<h5 class="mb-1">Post</h5>
+										<span>Share a post</span>
+									</div>
+								</a>
+							</div>
+							<div class="create-items">
+								<a href="#" class="d-flex align-items-center p-2">
+									<i class="fas fa-book-open rounded-circle bg-white text-center border"></i>
+									<div class="ml-2">
+										<h5 class="mb-1">Story</h5>
+										<span>Share your story</span>
+									</div>
+								</a>
+							</div>
+							<div class="create-items">
+								<a href="groups-members.html" class="d-flex align-items-center p-2">
+									<i class="fas fa-users rounded-circle bg-white text-center border"></i>
+									<div class="ml-2">
+										<h5 class="mb-1">Group</h5>
+										<span>Connect with people</span>
+									</div>
+								</a>
+							</div>
+							<div class="create-items">
+								<a href="market-listing.html" class="d-flex align-items-center p-2">
+									<i class="fas fa-store rounded-circle bg-white text-center border"></i>
+									<div class="ml-2">
+										<h5 class="mb-1">Marketplace Listing</h5>
+										<span>Sell items to people</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="modal status-modal fade" id="createPostModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered">
+						  <div class="modal-content border-0">
+							 <div class="modal-header border-0 p-0">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true">&times;</span>
+								</button>
+							 </div>
+							 <div class="modal-body pt-0">
+								<div class="form-group w-100 position-relative">
+									<textarea class="form-control w-100 h-100 shadow-none m-0" placeholder="What do you want to share"></textarea>
+									<ul class="color-plate text-center list-inline mb-0 position-absolute">
+										<li class="list-inline-item mr-1 mb-3 mb-sm-0"><a href="#" class="d-inline-block active"></a></li>
+										<li class="list-inline-item mr-1 mb-3 mb-sm-0"><a href="#" class="d-inline-block"></a></li>
+										<li class="list-inline-item mr-1 mb-3 mb-sm-0"><a href="#" class="d-inline-block"></a></li>
+										<li class="list-inline-item mr-1 mb-3 mb-sm-0"><a href="#" class="d-inline-block"></a></li>
+										<li class="list-inline-item mr-1 mb-3 mb-sm-0"><a href="#" class="d-inline-block"></a></li>
+										<li class="list-inline-item mr-1 mb-3 mb-sm-0"><a href="#" class="d-inline-block"></a></li>
+										<li class="list-inline-item mr-1 mb-3 mb-sm-0"><a href="#" class="d-inline-block"></a></li>
+										<li class="list-inline-item mr-1 mb-3 mb-sm-0"><a href="#" class="d-inline-block"></a></li>
+										<li class="list-inline-item mr-1 mb-3 mb-sm-0"><a href="#" class="d-inline-block"></a></li>
+										<li class="list-inline-item mr-1 mb-3 mb-sm-0"><a href="#" class="d-inline-block"></a></li>
+										<li class="list-inline-item mr-1 mb-3 mb-sm-0"><a href="#" class="d-inline-block"></a></li>
+										<li class="list-inline-item"><a href="#" class="d-inline-block"></a></li>
+									</ul>
+									<div class="user-icon rounded-circle overflow-hidden position-absolute">
+										<img class="w-100 h-100" src="./images/tanya.png" alt="tanya">
+									</div>
+								</div>
+								<div class="text-muted text-center font-weight-bold">Drag and drop image/video hera or <a href="#" class="link">Browse</a></div>
+							 </div>
+							 <div class="modal-footer align-items-center justify-content-center border-0 pt-0">
+								<div>
+									<div class="input-group">
+										<select class="custom-select shadow-none">
+										  <option selected>Public Audience</option>
+										  <option value="1">Personal</option>
+										  <option value="2">Friends</option>
+										  <option value="3">Custom</option>
+										</select>
+									</div>
+								</div>
+								 <div class="d-flex align-items-center justify-content-between">
+									 <a href="#" class="btn-tag rounded d-inline-block">Friend Tagging</a>
+									 <a href="#" class="d-inline-block mx-3"><img src="./images/camera3.png" alt="camera3"></a>
+									 <a href="#" class="btn-post d-inline-block text-white rounded" data-dismiss="modal" aria-label="Close">Post</a>
+								 </div>
+							 </div>
+						  </div>
+						</div>
+					</div>
+				</aside>
+				<div class="col-lg-9 col-sm-8 col-break">
+					<div class="row">
+						<!-- Rank Video Section -->
+						<div class="col-lg-5 d-flex flex-column">
+							<div class="rank-card mb-5 border rounded">
+								<div class="head d-flex align-items-center justify-content-between flex-wrap border-bottom p-2">
+									<div class="input-group w-auto">
+										<select class="custom-select border-0 shadow-none text-dark pl-0">
+										  <option selected>Red Hot Viewer’s Choice</option>
+										  <option value="1">Video 1</option>
+										  <option value="2">Video 2</option>
+										  <option value="3">Video 3</option>
+										</select>
+									</div>
+									<div class="d-flex align-items-center justify-content-between">
+										<span class="font-weight-bold">Auto Play</span>
+										<div class="custom-control custom-switch ml-3">
+											<input type="checkbox" class="custom-control-input" id="customSwitch" checked>
+											<label class="custom-control-label" for="customSwitch"></label>
+										</div>
+									</div>
+								</div>
+								<div class="rank-items-first rank-content show-time position-relative mx-auto mt-5">
+									<div class="rank-num active">1</div>
+									<div class="content position-absolute">
+										<h5 class="text-white">Miley Cyrus-Wrecking Ball</h5>
+										<span class="text-muted font-weight-bold">By Miley Cyrus</span>
+									</div>
+									<div class="show-time__value position-absolute font-weight-bold text-white">3:34</div>
+								</div>
+								<div class="card rank-items position-relative rank-content mt-5 pb-4 border-top-0 border-left-0 border-right-0 rounded-0 px-3">
+									<div class="rank-num">2</div>
+									<div class="row no-gutters">
+									  <div class="col-md-4 position-relative">
+										<img src="./images/vid2.png" class="w-100 h-100" alt="vid">
+										<div class="video-time position-absolute text-white">12:50</div>
+									  </div>
+									  <div class="col-md-8">
+										<div class="card-body">
+										  <h5 class="card-title text-dark">Fall - Winter 2017- 18 Men’s.....</h5>
+										  <small class="text-muted"><a href="#" class="font-weight-bold"><img src="./images/view-sm.png" alt="view" class="mr-1">1.03k Views</a></small>
+										</div>
+									  </div>
+									</div>
+								</div>
+								<div class="card rank-items position-relative rank-content mt-5 pb-4 border-top-0 border-left-0 border-right-0 rounded-0 px-3">
+									<div class="rank-num">3</div>
+									<div class="row no-gutters">
+									  <div class="col-md-4 position-relative">
+										<img src="./images/vid3.png" class="w-100 h-100" alt="vid">
+										<div class="video-time position-absolute text-white">12:50</div>
+									  </div>
+									  <div class="col-md-8">
+										<div class="card-body">
+										  <h5 class="card-title text-dark">World’s Greatest Drage Race.....</h5>
+										  <small class="text-muted"><a href="#" class="font-weight-bold"><img src="./images/view-sm.png" alt="view" class="mr-1">1.03k Views</a></small>
+										</div>
+									  </div>
+									</div>
+								</div>
+								<div class="card rank-items position-relative rank-content mt-5 pb-4 border-top-0 border-left-0 border-right-0 rounded-0 px-3">
+									<div class="rank-num">4</div>
+									<div class="row no-gutters">
+									  <div class="col-md-4 position-relative">
+										<img src="./images/vid4.png" class="w-100 h-100" alt="vid">
+										<div class="video-time position-absolute text-white">12:50</div>
+									  </div>
+									  <div class="col-md-8">
+										<div class="card-body">
+										  <h5 class="card-title text-dark">Guitar Chords For Beginners.....</h5>
+										  <small class="text-muted"><a href="#" class="font-weight-bold"><img src="./images/view-sm.png" alt="view" class="mr-1">1.03k Views</a></small>
+										</div>
+									  </div>
+									</div>
+								</div>
+								<div class="tag-box d-flex align-items-center justify-content-center flex-wrap mt-4">
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">art</a>
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">beauty</a>
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">business</a>
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">design</a>
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">dreams</a>
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">education</a>
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">experience</a>
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">failure</a>
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">faith</a>
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">family</a>
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">fear</a>
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">food</a>
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">friendship</a>
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">funny</a>
+									<a href="#" class="d-inline-block tag mb-2 mr-2 rounded-pill">future</a>
+								</div>
+							</div>
+						</div>
+						<!-- Popular Video Section -->
+						<div class="col-lg-7 px-lg-0 mb-5">
+							<div class="popular-container border rounded">
+								<div class="head p-2 d-flex align-items-center flex-wrap">
+									<h5 class="mb-0 text-uppercase text-dark mr-5">popular</h5>
+									<ul class="list-inline mb-0 ml-sm-5 ml-2">
+										<li class="list-inline-item mr-5">
+											<a href="#!" class="font-weight-bold active"><i class="fas fa-play-circle mr-2"></i>VIDEOS</a>
+										</li>
+										<li class="list-inline-item">
+											<a href="galleries.html" class="font-weight-bold"><i class="fas fa-images mr-2"></i>GALLERIES</a>
+										</li>
+									</ul>
+								</div>
+								<div class="card border-0 mb-3 pl-2 pr-2 pr-lg-0 my-4">
+									<div class="row no-gutters">
+									  <div class="col-md-4 show-time position-relative">
+										<img src="./images/video1.png" class="w-100 h-100" alt="video1">
+										<div class="show-time__value position-absolute font-weight-bold text-white">3:34</div>
+									  </div>
+									  <div class="col-md-8">
+										<div class="card-body text-dark">
+										  <h5 class="card-title">Lorem ipsum dolor sit amet, adipiscing elit...</h5>
+										  <p class="card-text text-muted">Etiam id nisi nec est feugiat interdum egestas non massa. In pellentesque tortor non quam.</p>
+										  <p class="card-text font-weight-bold">By <a href="#" class="link">Miley Cyrus</a></p>
+										  <ul class="list-inline mb-0">
+											<li class="list-inline-item mr-3">
+												<a href="#">17 March 2020</a>
+											</li>
+											<li class="list-inline-item">
+												<a href="#"><i class="far fa-eye mr-2"></i>1.03k Views</a>
+											</li>
+										  </ul>
+										</div>
+									  </div>
+									</div>
+								</div>
+								<div class="card border-0 mb-3 pl-2 pr-2 pr-lg-0 my-4">
+									<div class="row no-gutters">
+									  <div class="col-md-4 show-time position-relative">
+										<img src="./images/video1.png" class="w-100 h-100" alt="video1">
+										<div class="show-time__value position-absolute font-weight-bold text-white">3:34</div>
+									  </div>
+									  <div class="col-md-8">
+										<div class="card-body text-dark">
+										  <h5 class="card-title">Lorem ipsum dolor sit amet, adipiscing elit...</h5>
+										  <p class="card-text text-muted">Etiam id nisi nec est feugiat interdum egestas non massa. In pellentesque tortor non quam.</p>
+										  <p class="card-text font-weight-bold">By <a href="#" class="link">Miley Cyrus</a></p>
+										  <ul class="list-inline mb-0">
+											<li class="list-inline-item mr-3">
+												<a href="#">17 March 2020</a>
+											</li>
+											<li class="list-inline-item">
+												<a href="#"><i class="far fa-eye mr-2"></i>1.03k Views</a>
+											</li>
+										  </ul>
+										</div>
+									  </div>
+									</div>
+								</div>
+								<div class="card border-0 mb-3 pl-2 pr-2 pr-lg-0 my-4">
+									<div class="row no-gutters">
+									  <div class="col-md-4 show-time position-relative">
+										<img src="./images/video1.png" class="w-100 h-100" alt="video1">
+										<div class="show-time__value position-absolute font-weight-bold text-white">3:34</div>
+									  </div>
+									  <div class="col-md-8">
+										<div class="card-body text-dark">
+										  <h5 class="card-title">Lorem ipsum dolor sit amet, adipiscing elit...</h5>
+										  <p class="card-text text-muted">Etiam id nisi nec est feugiat interdum egestas non massa. In pellentesque tortor non quam.</p>
+										  <p class="card-text font-weight-bold">By <a href="#" class="link">Miley Cyrus</a></p>
+										  <ul class="list-inline mb-0">
+											<li class="list-inline-item mr-3">
+												<a href="#">17 March 2020</a>
+											</li>
+											<li class="list-inline-item">
+												<a href="#"><i class="far fa-eye mr-2"></i>1.03k Views</a>
+											</li>
+										  </ul>
+										</div>
+									  </div>
+									</div>
+								</div>
+								<div class="card border-0 mb-3 pl-2 pr-2 pr-lg-0 my-4">
+									<div class="row no-gutters">
+									  <div class="col-md-4 show-time position-relative">
+										<img src="./images/video1.png" class="w-100 h-100" alt="video1">
+										<div class="show-time__value position-absolute font-weight-bold text-white">3:34</div>
+									  </div>
+									  <div class="col-md-8">
+										<div class="card-body text-dark">
+										  <h5 class="card-title">Lorem ipsum dolor sit amet, adipiscing elit...</h5>
+										  <p class="card-text text-muted">Etiam id nisi nec est feugiat interdum egestas non massa. In pellentesque tortor non quam.</p>
+										  <p class="card-text font-weight-bold">By <a href="#" class="link">Miley Cyrus</a></p>
+										  <ul class="list-inline mb-0">
+											<li class="list-inline-item mr-3">
+												<a href="#">17 March 2020</a>
+											</li>
+											<li class="list-inline-item">
+												<a href="#"><i class="far fa-eye mr-2"></i>1.03k Views</a>
+											</li>
+										  </ul>
+										</div>
+									  </div>
+									</div>
+								</div>
+								<div class="card border-0 mb-3 pl-2 pr-2 pr-lg-0 my-4">
+									<div class="row no-gutters">
+									  <div class="col-md-4 show-time position-relative">
+										<img src="./images/video1.png" class="w-100 h-100" alt="video1">
+										<div class="show-time__value position-absolute font-weight-bold text-white">3:34</div>
+									  </div>
+									  <div class="col-md-8">
+										<div class="card-body text-dark">
+										  <h5 class="card-title">Lorem ipsum dolor sit amet, adipiscing elit...</h5>
+										  <p class="card-text text-muted">Etiam id nisi nec est feugiat interdum egestas non massa. In pellentesque tortor non quam.</p>
+										  <p class="card-text font-weight-bold">By <a href="#" class="link">Miley Cyrus</a></p>
+										  <ul class="list-inline mb-0">
+											<li class="list-inline-item mr-3">
+												<a href="#">17 March 2020</a>
+											</li>
+											<li class="list-inline-item">
+												<a href="#"><i class="far fa-eye mr-2"></i>1.03k Views</a>
+											</li>
+										  </ul>
+										</div>
+									  </div>
+									</div>
+								</div>
+								<div class="card border-0 mb-3 pl-2 pr-2 pr-lg-0 my-4">
+									<div class="row no-gutters">
+									  <div class="col-md-4 show-time position-relative">
+										<img src="./images/video1.png" class="w-100 h-100" alt="video1">
+										<div class="show-time__value position-absolute font-weight-bold text-white">3:34</div>
+									  </div>
+									  <div class="col-md-8">
+										<div class="card-body text-dark">
+										  <h5 class="card-title">Lorem ipsum dolor sit amet, adipiscing elit...</h5>
+										  <p class="card-text text-muted">Etiam id nisi nec est feugiat interdum egestas non massa. In pellentesque tortor non quam.</p>
+										  <p class="card-text font-weight-bold">By <a href="#" class="link">Miley Cyrus</a></p>
+										  <ul class="list-inline mb-0">
+											<li class="list-inline-item mr-3">
+												<a href="#">17 March 2020</a>
+											</li>
+											<li class="list-inline-item">
+												<a href="#"><i class="far fa-eye mr-2"></i>1.03k Views</a>
+											</li>
+										  </ul>
+										</div>
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Right Sidebar Section -->
+				<aside class="col-lg-1 col-sm-2 pr-0">
+					<div class="post-left post-right d-none d-sm-block position-fixed ml-auto">
+						<div id="mySidebar1" class="sidebar-right border-left">
+							<div class="fixed-part">
+								<div title="Close" id="myBtn1" class="neew-right">
+									<span>Community Affairs</span>
+									<a href="javascript:void(0)" class="right-menu-closebtn">
+										<img src="images/cross.png">
+									</a>
+								</div>
+								<div class="about-list">
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/one.png" class="mr-1">
+											<div>
+												<p class="mb-1 panel-text">Mike John reacted to your photo</p>
+												<small class="mb-0"> March 10 at 9:05PM </small>
+											</div>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/two.png" class="mr-1">
+											<div>
+												<p class="mb-1 panel-text">Mike John reacted to your photo</p>
+												<small class="mb-0"> March 10 at 9:05PM </small>
+											</div>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/three.png" class="mr-1">
+											<div>
+												<p class="mb-1 panel-text">Mike John reacted to your photo</p>
+												<small class="mb-0"> March 10 at 9:05PM </small>
+											</div>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center" href="#">
+											<img src="images/four.png" class="mr-1">
+											<div>
+												<p class="mb-1 panel-text">Mike John reacted to your photo</p>
+												<small class="mb-0"> March 10 at 9:05PM </small>
+											</div>
+										</a>
+									</div>
+									<h4 class="contact m-0 py-2">Contacts</h4>
+									<div class="panel-title">
+										<a class="d-flex align-items-center active" href="#">
+											<img src="images/five.png" class="mr-1">
+											<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center active" href="#">
+											<img src="images/six.png" class="mr-1">
+											<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center active" href="#">
+											<img src="images/seven.png" class="mr-1">
+											<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center active" href="#">
+											<img src="images/eight.png" class="mr-1">
+											<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center active" href="#">
+											<img src="images/nine.png" class="mr-1">
+											<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center active" href="#">
+											<img src="images/ten.png" class="mr-1">
+											<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center active" href="#">
+											<img src="images/11.png" class="mr-1">
+											<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center active" href="#">
+											<img src="images/12.png" class="mr-1">
+											<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+										</a>
+									</div>
+									<div class="panel-title">
+										<a class="d-flex align-items-center active" href="#">
+											<img src="images/13.png" class="mr-1">
+											<p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="right-menu h-100" title="Open">
+							<ul class="two mb-0">
+								<li>
+									<a href="#">
+										<img src="images/back.png" alt="back" class="toggoler-img">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/one.png" class="menu-pic img-responsive">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/two.png" class="menu-pic img-responsive">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/three.png" class="menu-pic img-responsive">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/four.png" class="menu-pic img-responsive">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/five.png" class="menu-pic img-responsive">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/six.png" class="menu-pic img-responsive">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/seven.png" class="menu-pic img-responsive">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/eight.png" class="menu-pic img-responsive">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/nine.png" class="menu-pic img-responsive">
+									</a>
+								</li>
+								<li>
+									<a href="#" class="text-center setting-bar">
+										<i class="fas fa-cog"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contact-list-toggoler rounded-circle position-fixed d-flex align-items-center justify-content-center">
+						<a href="#!"><i class="fas fa-plus-circle"></i></a>
+					</div>
+					<div class="contact-list-container position-fixed border w-100 overflow-hidden">
+						<div class="head d-flex align-items-center justify-content-between bg-white p-2">
+							<div class="user d-flex align-items-center">
+								<img src="./images/profile2.png" alt="profile2" class="mr-2">
+								<div>
+									<h5 class="mb-0 text-dark">Maggla</h5>
+									<small class="online-status active">Online</small>
+								</div>
+							</div>
+							<a href="#" class="setting"><i class="fas fa-cog"></i></a>
+						</div>
+						<div class="body overflow-auto">
+							<div class="contact-list-items">
+								<a href="#!" class="d-flex align-items-center justify-content-between p-2 border-bottom">
+									<div class="user d-flex align-items-center">
+										<img src="./images/one.png" alt="one" class="mr-2">
+										<div>
+											<h5 class="mb-0 text-dark">Jon</h5>
+											<small class="online-status active">Online</small>
+										</div>
+									</div>
+									<time>10:00 pm</time>
+								</a>
+							</div>
+							<div class="contact-list-items">
+								<a href="#!" class="d-flex align-items-center justify-content-between p-2 border-bottom">
+									<div class="user d-flex align-items-center">
+										<img src="./images/two.png" alt="two" class="mr-2">
+										<div>
+											<h5 class="mb-0 text-dark">Rock</h5>
+											<small class="online-status">Offline</small>
+										</div>
+									</div>
+									<time>12:00 am</time>
+								</a>
+							</div>
+							<div class="contact-list-items">
+								<a href="#!" class="d-flex align-items-center justify-content-between p-2 border-bottom">
+									<div class="user d-flex align-items-center">
+										<img src="./images/three.png" alt="three" class="mr-2">
+										<div>
+											<h5 class="mb-0 text-dark">Jasmin</h5>
+											<small class="online-status">Offline</small>
+										</div>
+									</div>
+									<time>01:00 am</time>
+								</a>
+							</div>
+							<div class="contact-list-items">
+								<a href="#!" class="d-flex align-items-center justify-content-between p-2 border-bottom">
+									<div class="user d-flex align-items-center">
+										<img src="./images/one.png" alt="one" class="mr-2">
+										<div>
+											<h5 class="mb-0 text-dark">Jon</h5>
+											<small class="online-status active">Online</small>
+										</div>
+									</div>
+									<time>10:00 pm</time>
+								</a>
+							</div>
+							<div class="contact-list-items">
+								<a href="#!" class="d-flex align-items-center justify-content-between p-2 border-bottom">
+									<div class="user d-flex align-items-center">
+										<img src="./images/two.png" alt="two" class="mr-2">
+										<div>
+											<h5 class="mb-0 text-dark">Rock</h5>
+											<small class="online-status">Offline</small>
+										</div>
+									</div>
+									<time>12:00 am</time>
+								</a>
+							</div>
+							<div class="contact-list-items">
+								<a href="#!" class="d-flex align-items-center justify-content-between p-2 border-bottom">
+									<div class="user d-flex align-items-center">
+										<img src="./images/one.png" alt="one" class="mr-2">
+										<div>
+											<h5 class="mb-0 text-dark">Jon</h5>
+											<small class="online-status active">Online</small>
+										</div>
+									</div>
+									<time>10:00 pm</time>
+								</a>
+							</div>
+							<div class="contact-list-items">
+								<a href="#!" class="d-flex align-items-center justify-content-between p-2 border-bottom">
+									<div class="user d-flex align-items-center">
+										<img src="./images/two.png" alt="two" class="mr-2">
+										<div>
+											<h5 class="mb-0 text-dark">Rock</h5>
+											<small class="online-status">Offline</small>
+										</div>
+									</div>
+									<time>12:00 am</time>
+								</a>
+							</div>
+							<div class="contact-list-items">
+								<a href="#!" class="d-flex align-items-center justify-content-between p-2 border-bottom">
+									<div class="user d-flex align-items-center">
+										<img src="./images/three.png" alt="three" class="mr-2">
+										<div>
+											<h5 class="mb-0 text-dark">Jasmin</h5>
+											<small class="online-status">Offline</small>
+										</div>
+									</div>
+									<time>01:00 am</time>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Messeger Area -->
+					<div class="messenger-container">
+						<div class="mini-messenger-container rounded-circle position-fixed">
+							<div class="mini-messenger-content w-100 h-100 position-relative">
+								<img src="./images/tanya.png" alt="12" class="w-100 h-100">
+								<div class="mini-messenger-user d-flex align-items-center justify-content-center position-absolute p-2 font-weight-bold rounded-pill">Andrew T.</div>
+							</div>
+							<div class="close-btn position-absolute">
+								<i class="fas fa-plus-circle"></i>
+							</div>
+						</div>
+						<div class="messenger-chat border overflow-hidden">
+							<div class="messenger-header bg-white border-bottom d-flex align-items-center justify-content-between">
+								<div class="user d-flex align-items-center p-2">
+									<img src="./images/avtar1.png" alt="avtar1">
+									<div class="ml-2">
+										<a href="#!" class="font-weight-bold text-dark">John Doe</a>
+										<br>
+										<small>Active Now</small>
+									</div>
+								</div>
+								<div>
+									<a href="#" class="d-inline-block icons"><i class="fas fa-video"></i></a>
+									<a href="#" class="d-inline-block icons ml-1"><i class="fas fa-phone-alt"></i></a>
+									<a href="#" class="d-inline-block icons mini-messenger-toggoler ml-1"><i class="fas fa-minus-circle"></i></a>
+									<a href="#" class="d-inline-block icons close-messenger mx-2"><i class="fas fa-times"></i></a>
+								</div>
+							</div>
+							<div class="messenger-body overflow-auto p-2">
+								<div class="message-block d-flex align-items-center mb-2">
+									<img src="./images/12.png" alt="12">
+									<div class="message reply ml-2 p-2">
+										Hi, There.
+									</div>
+								</div>
+								<div class="message-block d-flex align-items-center justify-content-end mb-2">
+									<div class="message text-white ans mr-2 p-2">
+										Hello. How are you?
+									</div>
+									<img src="./images/11.png" alt="12">
+								</div>
+								<div class="text-center my-2">
+									<small>Sun, 22:22 pm</small>
+								</div>
+								<div class="message-block d-flex align-items-center mb-2">
+									<img src="./images/12.png" alt="12">
+									<div class="message reply ml-2 p-2">
+										Hi, There.
+									</div>
+								</div>
+								<div class="message-block d-flex align-items-center justify-content-end mb-2">
+									<div class="message text-white ans mr-2 p-2">
+										Hello. How are you?
+									</div>
+									<img src="./images/11.png" alt="12">
+								</div>
+								<div class="message-block d-flex align-items-center mb-2">
+									<img src="./images/12.png" alt="12">
+									<div class="message reply ml-2 p-2">
+										Hi, There.
+									</div>
+								</div>
+								<div class="message-block d-flex align-items-center justify-content-end mb-2">
+									<div class="message text-white ans mr-2 p-2">
+										Hello. How are you?
+									</div>
+									<img src="./images/11.png" alt="12">
+								</div>
+							</div>
+							<div class="messenger-bottom border-top p-2">
+								<div class="d-flex align-items-center justify-content-center mb-1">
+									<a href="#" class="att-icons d-inline-block mx-2"><i class="fas fa-images"></i></a>
+									<a href="#" class="att-icons d-inline-block mx-2"><i class="fas fa-icons"></i></a>
+									<a href="#" class="att-icons d-inline-block mx-2"><i class="fas fa-paperclip"></i></a>
+								</div>
+								<form action="#">
+									<div class="form-group position-relative mb-0">
+										<textarea class="form-control shadow-none rounded-pill" placeholder="Reply"></textarea>
+										<button type="submit" class="btn position-absolute shadow-none"><i class="fas fa-paper-plane"></i></button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</div>
+	<!-- Footer Section -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row justify-content-center py-4 text-center">
+				<div class="col-lg-9 col-12">
+					<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive"><img src="./images/social.png" alt="social"></a>
+					<ul class="list-inline first-menu my-4">
+						<li class="list-inline-item mr-3"><a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Privacy</a></li>
+						<li class="list-inline-item mr-3"><a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Terms of Service</a></li>
+						<li class="list-inline-item mr-3"><a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Help</a></li>
+						<li class="list-inline-item mr-3"><a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Code of Conduct</a></li>
+						<li class="list-inline-item mr-3"><a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Cookie Policy</a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Fyrestream News</a></li>
+					</ul>
+					<ul class="list-inline second-menu mb-4">
+						<li class="list-inline-item mr-3"><a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Safety Tips</a></li>
+						<li class="list-inline-item mr-3"><a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">FAQs</a></li>
+						<li class="list-inline-item mr-3"><a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Post An Ad</a></li>
+						<li class="list-inline-item mr-3"><a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Subscribe to Classifieds Alerts</a></li>
+					</ul>
+					<h5>Check out the Fyrestream Market Classifieds and find everything near you:</h5>
+					<p class="find">
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Apartments for rent,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">homes for sale,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">new and used cars,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">services,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">furniture,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">boats,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">bicycles,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">electronics,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">cell phones,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">games,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">lessons,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">used sporting goods,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">motorcycles,</a>
+						and more.
+					</p>
+					<h5>United States Top Communities Classifieds:</h5>
+					<p class="us-top">
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Akron,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Albuquerque,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Anaheim,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Anchorage,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Arlington (TX),</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive"> Arlington (VA),</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Atlanta,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Aurora,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Austin,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Bakersfield,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Baltimore,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Baton Rouge,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Birmingham,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Boise,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Boston,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Buffalo,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Chandler,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Charlotte,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Chesapeake,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Chicago,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Chula Vista,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Cincinnati,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Cleveland,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Colorado Springs,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Columbus,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Corpus Christi,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Dallas,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Denver,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Detroit,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Durham,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">El Paso,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Fort Wayne,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Fort Worth,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Fresno,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Garland,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Gilbert,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Glendale,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Greensboro,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Henderson,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Hialeah,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Honolulu,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Houston,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Indianapolis,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Irvine,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Jacksonville,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Jersey City,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Kansas City,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Laredo,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Las Vegas,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Lexington,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Lincoln,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Long Beach,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Los Angeles,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Louisville,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Lubbock,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Madison,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Memphis,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Mesa,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Miami,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Milwaukee,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Minneapolis,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Nashville,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">New Orleans,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">New York City,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Newark,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Norfolk,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">North Las Vegas,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Oakland,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Oklahoma City,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Omaha,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Orlando,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Philadelphia,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Phoenix,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Pittsburgh,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Plano,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Portland,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Raleigh,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Reno, </a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Riverside,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Rochester,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Sacramento,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Saint Louis,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Saint Paul,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Saint Petersburg,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">San Antonio,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">San Diego,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">San Francisco,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">San Jose,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Santa Ana,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Scottsdale,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Seattle,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Stockton,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Tampa,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Toledo,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Tucson,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Tulsa,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Virginia Beach,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Washington,</a>
+						<a href="https://www.fiverr.com/developer_zahid/psd-to-html-landing-page-html5-bootstrap-website-design-convert-html">Wichita,</a>
+						<a href="https://www.fiverr.com/developer_zahid/convert-psd-to-html-xd-to-html5-psd-to-bootstrap-sketch-css-landing-responsive">Winston Salem</a>
+					</p>
+					<h5>U.S. and Canadian Classifieds by State or Province:</h5>
+					<p class="us_can"><a href="#">Alabama,</a> <a href="#">Alaska,</a> <a href="#">Alberta,</a> <a
+							href="#">Arizona,</a> <a href="#">Arkansas,</a> <a href="#">British Columbia,</a> <a
+							href="#">California,</a> <a href="#">Colorado,</a> <a href="#">Connecticut,</a> <a
+							href="#">Delaware,</a> <a href="#">District Of Columbia,</a> <a href="#">Florida,</a> <a
+							href="#">Georgia,</a> <a href="#">Hawaii,</a> <a href="#">Idaho,</a> <a href="#">Illinois,</a>
+						<a href="#">Indiana,</a> <a href="#">Iowa,</a> <a href="#">Kansas,</a> <a href="#">Kentucky,</a> <a
+							href="#">Louisiana,</a> <a href="#">Maine,</a> <a href="#">Manitoba,</a> <a href="#">Maryland,</a>
+						<a href="#">Massachusetts,</a> <a href="#">Michigan,</a> <a href="#">Minnesota,</a> <a
+							href="#">Mississippi,</a> <a href="#">Missouri,</a> <a href="#">Montana,</a> <a
+							href="#">Nebraska,</a> <a href="#">Nevada,</a> <a href="#">New
+							Brunswick,</a> <a href="#">New Hampshire,</a> <a href="#">New Jersey,</a> <a href="#">New
+							Mexico,</a> <a href="#">New York,</a> <a href="#">Newfoundland,</a> <a href="#">North
+							Carolina,</a> <a href="#">North Dakota,</a> <a href="#">Northwest Territories,</a> <a href="#">Nova
+							Scotia,</a> <a href="#">Nunavut,</a> <a href="#">Ohio,</a> <a href="#">Oklahoma,</a> <a
+							href="#">Ontario,</a> <a href="#">Oregon,</a> <a href="#">Pennsylvania,</a> <a href="#">Prince
+							Edward Island,</a> <a href="#">Quebec,</a> <a href="#">Rhode Island,</a> <a
+							href="#">Saskatchewan,</a> <a href="#">South Carolina,</a> <a href="#">South Dakota,</a> <a
+							href="#">Tennessee,</a> <a href="#">Texas,</a> <a href="#">Utah,</a> <a href="#">Vermont,</a> <a
+							href="#">Virginia,</a> <a href="#">Washington,</a> <a href="#">West Virginia,</a> <a
+							href="#">Wisconsin,</a> <a href="#">Wyoming,</a> <a href="#">Yukon</a></p>
+					<p class="mt-5 text-dark">©2020. Fyrestream.com. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- All Script -->
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>

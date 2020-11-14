@@ -1,0 +1,2099 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <!-- All CSS -->
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./plugins/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./plugins/slick-slider/css/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fix.css" />
+    <link rel="stylesheet" href="./css/timeline.css" />
+    <link rel="stylesheet" href="./css/fav-moments-modal.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="sticky-top" id="top">
+      <!-- Header Top -->
+      <div class="header-top">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand p-0" href="groups.html">
+              <img src="./images/Fyre 01.svg" alt="brand-logo" />
+              <!-- <img src="./images/top-logo.svg" alt="brand-logo"> -->
+              <img
+                src="./images/Fyre 02.svg"
+                class="nav-logo-text"
+                alt="brand-logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form
+                class="form-inline mx-auto mt-2 mt-sm-0 position-relative header-top-searchbar"
+              >
+                <input
+                  class="form-control ml-sm-2 rounded-pill shadow-none bg-white w-100"
+                  type="search"
+                  placeholder="Search videos by keyword, artist, etc."
+                  aria-label="Search"
+                />
+                <button
+                  class="btn shadow-none my-2 my-sm-0 position-absolute"
+                  type="submit"
+                >
+                  <i class="fas fa-video pr-1"></i
+                  ><i class="fas fa-sort-down pr-1"></i
+                  ><i class="fas text-danger fa-search"></i>
+                </button>
+              </form>
+              <ul
+                class="navbar-nav flex-row justify-content-around my-3 my-lg-0 ml-auto notification-icons"
+              >
+                <li class="nav-item dropdown mx-1">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id=""
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <div class="notify">3</div>
+                    <img
+                      src="./images/video-top.png"
+                      class="top-notification-pic"
+                      alt=""
+                    />
+                    <img
+                      src="./images/Video-Dark.png"
+                      class="top-notification-pic-hover"
+                      alt=""
+                    />
+                  </a>
+                  <div
+                    class="dropdown-menu most-watched notify-dropdown-menu py-0 rounded border-0 position-absolute"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <div
+                      class="dropdown-menu-head rounded-top p-2 text-white d-flex align-items-center position-relative"
+                    >
+                      <a href="#" class="most-watched-settings"
+                        ><i class="fas fa-cog mr-2"></i></a
+                      >Most Watched
+                    </div>
+                    <div class="most-watched-list">
+                      <div class="most-watched-post">
+                        <p>
+                          Best selling artist of the year from 1970 to 2019
+                        </p>
+                        <div class="bg-thumbnail"></div>
+                      </div>
+                      <div class="most-watched-post">
+                        <p>
+                          Best selling artist of the year from 1970 to 2019
+                        </p>
+                        <div class="bg-thumbnail"></div>
+                      </div>
+                      <div class="most-watched-post">
+                        <p>
+                          Best selling artist of the year from 1970 to 2019
+                        </p>
+                        <div class="bg-thumbnail"></div>
+                      </div>
+                      <div class="most-watched-post">
+                        <p>
+                          Best selling artist of the year from 1970 to 2019
+                        </p>
+                        <div class="bg-thumbnail"></div>
+                      </div>
+                      <div class="most-watched-post">
+                        <p>
+                          Best selling artist of the year from 1970 to 2019
+                        </p>
+                        <div class="bg-thumbnail"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown mx-1">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="./images/Friends-top.png"
+                      class="top-notification-pic"
+                      alt=""
+                    />
+                    <img
+                      src="./images/Friends-Dark.png"
+                      class="top-notification-pic-hover"
+                      alt=""
+                    />
+                  </a>
+                  <div
+                    class="dropdown-menu py-0 rounded border-0 position-absolute"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <div
+                      class="dropdown-menu-head rounded-top p-2 text-white d-flex align-items-center position-relative"
+                    >
+                      <img
+                        src="./images/discover_members.png"
+                        class="follower-req-img"
+                        alt="discover_members"
+                        class="mr-2 follow-req-img"
+                      />Follower Requests
+                    </div>
+                    <div
+                      class="dropdown-menu-content d-flex align-items-center mb-1 p-2"
+                    >
+                      <div class="mr-2">
+                        <a href="#"><img src="./images/one.png" alt="one" /></a>
+                      </div>
+                      <div class="flex-grow-1">
+                        <a href="#">Zahid <span>has followed you</span></a>
+                        <div class="my-2">
+                          <a
+                            href="#"
+                            class="dropdown-menu-btn d-inline-block px-3 py-1 text-white"
+                            >Accept</a
+                          >
+                          <a
+                            href="#"
+                            class="dropdown-menu-btn d-inline-block px-3 py-1 border bg-white"
+                            >Cancel</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="dropdown-menu-content d-flex align-items-center mb-1 p-2"
+                    >
+                      <div class="mr-2">
+                        <a href="#"><img src="./images/two.png" alt="two" /></a>
+                      </div>
+                      <div class="flex-grow-1">
+                        <a href="#">Azman <span>has followed you</span></a>
+                        <div class="my-2">
+                          <a
+                            href="#"
+                            class="dropdown-menu-btn d-inline-block px-3 py-1 text-white"
+                            >Accept</a
+                          >
+                          <a
+                            href="#"
+                            class="dropdown-menu-btn d-inline-block px-3 py-1 border bg-white"
+                            >Cancel</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="dropdown-menu-content d-flex align-items-center p-2"
+                    >
+                      <div class="mr-2">
+                        <a href="#"
+                          ><img src="./images/three.png" alt="three"
+                        /></a>
+                      </div>
+                      <div class="flex-grow-1">
+                        <a href="#">Jasmin <span>has followed you</span></a>
+                        <div class="my-2">
+                          <a
+                            href="#"
+                            class="dropdown-menu-btn d-inline-block px-3 py-1 text-white"
+                            >Accept</a
+                          >
+                          <a
+                            href="#"
+                            class="dropdown-menu-btn d-inline-block px-3 py-1 border bg-white"
+                            >Cancel</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="dropdown-footer text-center py-2 rounded-bottom"
+                    >
+                      <a href="#" class="d-inline-block text-dark">View All</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link" href="#">
+                    <div class="notify">3</div>
+                    <img
+                      src="./images/Market-top.png"
+                      class="top-notification-pic"
+                      alt=""
+                    />
+                    <img
+                      src="./images/Market-Dark.png"
+                      class="top-notification-pic-hover"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="nav-item dropdown mx-1">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <div class="notify">3</div>
+                    <img
+                      src="./images/Notification-top.png"
+                      class="top-notification-pic"
+                      alt=""
+                    />
+                    <img
+                      src="./images/Notification-Dark.png"
+                      class="top-notification-pic-hover"
+                      alt=""
+                    />
+                  </a>
+                  <div
+                    class="dropdown-menu notify-dropdown-menu py-0 rounded border-0 position-absolute"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <div
+                      class="dropdown-menu-head rounded-top p-2 text-white d-flex align-items-center position-relative"
+                    >
+                      <a href="#"><i class="fas fa-cog mr-2"></i></a
+                      >Notification
+                    </div>
+                    <div
+                      class="dropdown-menu-content d-flex align-items-center p-2 mb-1"
+                    >
+                      <div class="mr-2">
+                        <a href="#"><img src="./images/one.png" alt="one" /></a>
+                      </div>
+                      <div class="flex-grow-1 py-2">
+                        <a href="#">Zahid <span>followed you</span></a>
+                        <div>
+                          <small class="text-muted">4 hours ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="dropdown-menu-content d-flex align-items-center p-2 mb-1"
+                    >
+                      <div class="mr-2">
+                        <a href="#"><img src="./images/two.png" alt="two" /></a>
+                      </div>
+                      <div class="flex-grow-1 py-2">
+                        <a href="#">Azman <span>liked</span> your post</a>
+                        <div>
+                          <small class="text-muted">Yesterday</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="dropdown-menu-content d-flex align-items-center p-2"
+                    >
+                      <div class="mr-2">
+                        <a href="#"
+                          ><img src="./images/three.png" alt="three"
+                        /></a>
+                      </div>
+                      <div class="flex-grow-1 py-2">
+                        <a href="#"
+                          >Jasmin <span>commented on</span> your post</a
+                        >
+                        <div>
+                          <small class="text-muted">4 days ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="dropdown-footer text-center py-2 rounded-bottom"
+                    >
+                      <a href="#" class="d-inline-block text-dark">View All</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="profile-nav ml-auto">
+                <a
+                  href="#"
+                  class="d-flex justify-content-center align-items-center profile-dropdown-toggler"
+                >
+                  <b>Maggle</b>
+                  <img
+                    src="./images/profile2.png"
+                    alt="profile2"
+                    class="ml-2"
+                  />
+                  <i class="fas fa-sort-down ml-1"></i>
+                  <div class="profile-dropdown">
+                    <a href="#"
+                      ><i class="fas fa-user-circle"></i> My Profile</a
+                    >
+                    <a href="#"
+                      ><i class="fas fa-sliders-h"></i> Profile Settings</a
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="vertical-side-bars d-block d-sm-none">
+                <div class="categories">
+                  <div class="categorie-list">
+                    <div class="vertical-side-head">
+                      <h2 class="my-2">Categories</h2>
+                    </div>
+                    <div class="categorie-items py-3">
+                      <a class="d-flex align-items-center" href="#">
+                        <div class="img-box">
+                          <img src="images/videos.png" class="real-img" />
+                          <img src="images/videos-red.png" class="hover-img" />
+                        </div>
+                        <p class="mb-0 ml-3">Videos</p>
+                      </a>
+                    </div>
+                    <div class="categorie-items py-3">
+                      <a class="d-flex align-items-center" href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/market_classifieds.png"
+                            class="real-img"
+                          />
+                          <img
+                            src="images/market_classifieds-red.png"
+                            class="hover-img"
+                          />
+                        </div>
+                        <p class="mb-0 ml-3">Market Classifieds</p>
+                      </a>
+                    </div>
+                    <div class="categorie-items py-3">
+                      <a class="d-flex align-items-center" href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/twitch_stream.png"
+                            class="real-img"
+                          />
+                          <img
+                            src="images/twitch_stream-red.png"
+                            class="hover-img"
+                          />
+                        </div>
+                        <p class="mb-0 ml-3">Twitch Stream</p>
+                      </a>
+                    </div>
+                    <div class="categorie-items py-3">
+                      <a class="d-flex align-items-center" href="#">
+                        <div class="img-box">
+                          <img src="images/live_stream.png" class="real-img" />
+                          <img
+                            src="images/live_stream-red.png"
+                            class="hover-img"
+                          />
+                        </div>
+                        <p class="mb-0 ml-3">Live Stream</p>
+                      </a>
+                    </div>
+                    <div class="categorie-items py-3">
+                      <a class="d-flex align-items-center" href="#">
+                        <div class="img-box">
+                          <img src="images/events.png" class="real-img" />
+                          <img src="images/events-red.png" class="hover-img" />
+                        </div>
+                        <p class="mb-0 ml-3">Events</p>
+                      </a>
+                    </div>
+                    <div class="categorie-items py-3">
+                      <a class="d-flex align-items-center" href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/group_channels.png"
+                            class="real-img"
+                          />
+                          <img
+                            src="images/group_channels-red.png"
+                            class="hover-img"
+                          />
+                        </div>
+                        <p class="mb-0 ml-3">Group Channels</p>
+                      </a>
+                    </div>
+                    <div class="categorie-items py-3">
+                      <a class="d-flex align-items-center" href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/discover_members.png"
+                            class="real-img"
+                          />
+                          <img
+                            src="images/discover_members-red.png"
+                            class="hover-img"
+                          />
+                        </div>
+                        <p class="mb-0 ml-3">Discover Members</p>
+                      </a>
+                    </div>
+                    <div class="categorie-items py-3">
+                      <a class="d-flex align-items-center" href="#">
+                        <div class="img-box">
+                          <img
+                            src="images/custom_themes.png"
+                            class="real-img"
+                          />
+                          <img
+                            src="images/custom_themes-red.png"
+                            class="hover-img"
+                          />
+                        </div>
+                        <p class="mb-0 ml-3">Custom Themes</p>
+                      </a>
+                    </div>
+                    <div class="categorie-items py-3">
+                      <a class="d-flex align-items-center" href="#">
+                        <div class="img-box">
+                          <img src="images/pro_services.png" class="real-img" />
+                          <img
+                            src="images/pro_services-red.png"
+                            class="hover-img"
+                          />
+                        </div>
+                        <p class="mb-0 ml-3">Pro Services</p>
+                      </a>
+                    </div>
+                    <div class="categorie-items py-3">
+                      <a class="d-flex align-items-center" href="#">
+                        <div class="img-box">
+                          <img src="images/Invite_new.png" class="real-img" />
+                          <img
+                            src="images/Invite_new-red.png"
+                            class="hover-img"
+                          />
+                        </div>
+                        <p class="mb-0 ml-3">Invite</p>
+                      </a>
+                    </div>
+                    <div class="categorie-items py-3">
+                      <a class="d-flex align-items-center" href="#">
+                        <div class="img-box">
+                          <img src="images/resources.png" class="real-img" />
+                          <img
+                            src="images/resources-red.png"
+                            class="hover-img"
+                          />
+                        </div>
+                        <p class="mb-0 ml-3">Resources</p>
+                      </a>
+                    </div>
+                    <div class="categorie-items py-3">
+                      <a class="d-flex align-items-center" href="#">
+                        <div class="img-box">
+                          <img src="images/saved.png" class="real-img" />
+                          <img src="images/saved-red.png" class="hover-img" />
+                        </div>
+                        <p class="mb-0 ml-3">Saved</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="contacts">
+                  <div class="vertical-side-head border-top">
+                    <h2 class="my-2">Contacts</h2>
+                  </div>
+                  <div class="contacts-items py-3">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/five.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="contacts-items py-3">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/six.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="contacts-items py-3">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/seven.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="contacts-items py-3">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/eight.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="contacts-items py-3">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/nine.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="contacts-items py-3">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/ten.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="contacts-items py-3">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/11.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="contacts-items py-3">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/12.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="contacts-items py-3 mb-5">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/13.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Header Bottom  -->
+      <div class="header-bottom bg-white">
+        <div class="container-fluid"></div>
+      </div>
+    </header>
+    <!-- Off Canvas Sidebar -->
+    <div class="off-canvas-sidebar position-fixed">
+      <div class="about-list">
+        <div class="panel-title">
+          <a class="d-flex align-items-center" href="#">
+            <img src="images/videos.png" />
+            <p class="mb-0 ml-3">Videos</p>
+          </a>
+        </div>
+        <div class="panel-title">
+          <a class="d-flex align-items-center" href="#">
+            <img src="images/market_classifieds.png" />
+            <p class="mb-0 ml-3">Market Classifieds</p>
+          </a>
+        </div>
+        <div class="panel-title">
+          <a class="d-flex align-items-center" href="#">
+            <img src="images/twitch_stream.png" />
+            <p class="mb-0 ml-3">Twitch Stream</p>
+          </a>
+        </div>
+        <div class="panel-title">
+          <a class="d-flex align-items-center" href="#">
+            <img src="images/live_stream.png" />
+            <p class="mb-0 ml-3">Live Stream</p>
+          </a>
+        </div>
+        <div class="panel-title">
+          <a class="d-flex align-items-center" href="#">
+            <img src="images/events.png" />
+            <p class="mb-0 ml-3">Events</p>
+          </a>
+        </div>
+        <div class="panel-title">
+          <a class="d-flex align-items-center" href="#">
+            <img src="images/group_channels.png" />
+            <p class="mb-0 ml-3">Group Channels</p>
+          </a>
+        </div>
+        <div class="panel-title">
+          <a class="d-flex align-items-center" href="#">
+            <img src="images/discover_members.png" />
+            <p class="mb-0 ml-3">Discover Members</p>
+          </a>
+        </div>
+        <div class="panel-title">
+          <a class="d-flex align-items-center" href="#">
+            <img src="images/custom_themes.png" />
+            <p class="mb-0 ml-3">Custom Themes</p>
+          </a>
+        </div>
+        <div class="panel-title">
+          <a class="d-flex align-items-center" href="#">
+            <img src="images/pro_services.png" />
+            <p class="mb-0 ml-3">Pro Services</p>
+          </a>
+        </div>
+        <div class="panel-title">
+          <a class="d-flex align-items-center" href="#">
+            <img src="images/Invite_new.png" />
+            <p class="mb-0 ml-3">Invite</p>
+          </a>
+        </div>
+        <div class="panel-title">
+          <a class="d-flex align-items-center" href="#">
+            <img src="images/resources.png" />
+            <p class="mb-0 ml-3">Resources</p>
+          </a>
+        </div>
+        <div class="panel-title">
+          <a class="d-flex align-items-center" href="#">
+            <img src="images/saved.png" />
+            <p class="mb-0 ml-3">Saved</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Post Section -->
+    <div class="post-wrapper py-3">
+      <div class="container-fluid">
+        <div class="row justify-content-between">
+          <!-- Left Sidebar Section -->
+          <aside class="col-lg-1 col-sm-2 pl-0">
+            <div
+              class="post-left post-left-only d-none d-sm-block position-fixed"
+            >
+              <div id="mySidebar" class="sidebar">
+                <div class="fixed-part">
+                  <!-- <div title="Close" id="myBtn" class="neew">
+                                <span>Applications Center</span>
+                                <a href="javascript:void(0)" class="left-menu-closebtn">
+                                    <img src="images/cross.png">
+                                </a>
+                            </div> -->
+                  <div class="about-list">
+                    <div class="panel-title">
+                      <a class="d-flex align-items-center" href="#">
+                        <img src="images/videos-red.png" />
+                        <p class="mb-0 ml-3">Videos</p>
+                      </a>
+                    </div>
+                    <div class="panel-title">
+                      <a class="d-flex align-items-center" href="#">
+                        <img src="images/market_classifieds-red.png" />
+                        <p class="mb-0 ml-3">Marketplace</p>
+                      </a>
+                    </div>
+                    <div class="panel-title">
+                      <a class="d-flex align-items-center" href="#">
+                        <img src="images/twitch_stream-red.png" />
+                        <p class="mb-0 ml-3">Discover</p>
+                      </a>
+                    </div>
+                    <div class="panel-title">
+                      <a class="d-flex align-items-center" href="#">
+                        <img src="images/entertainment-red.png" />
+                        <p class="mb-0 ml-3">Entertainment</p>
+                      </a>
+                    </div>
+                    <div class="panel-title">
+                      <a class="d-flex align-items-center" href="#">
+                        <img src="images/events-red.png" />
+                        <p class="mb-0 ml-3">Followers</p>
+                      </a>
+                    </div>
+                    <div class="panel-title">
+                      <a class="d-flex align-items-center" href="#">
+                        <img src="images/group_channels-red.png" />
+                        <p class="mb-0 ml-3">Events</p>
+                      </a>
+                    </div>
+                    <div class="panel-title">
+                      <a class="d-flex align-items-center" href="#">
+                        <img src="images/discover_members-red.png" />
+                        <p class="mb-0 ml-3">Groups</p>
+                      </a>
+                    </div>
+                    <div class="panel-title">
+                      <a class="d-flex align-items-center" href="#">
+                        <img src="images/live_stream-red.png" />
+                        <p class="mb-0 ml-3">Live Video</p>
+                      </a>
+                    </div>
+                    <div class="panel-title item-to-hide hidden-about-list">
+                      <a class="d-flex align-items-center" href="#">
+                        <img src="images/custom_themes-red.png" />
+                        <p class="mb-0 ml-3">Custom Themes</p>
+                      </a>
+                    </div>
+                    <div class="panel-title item-to-hide hidden-about-list">
+                      <a class="d-flex align-items-center" href="#">
+                        <img src="images/pro_services-red.png" />
+                        <p class="mb-0 ml-3">Pro Services</p>
+                      </a>
+                    </div>
+                    <div class="panel-title">
+                      <a
+                        class="d-flex align-items-center view-more-btn"
+                        href="#"
+                      >
+                        <img
+                          class="view-more-img"
+                          src="images/down-arrow.png"
+                        />
+                        <p class="mb-0 ml-3 view-more-text">View More</p>
+                      </a>
+                    </div>
+                    <!--                                <div class="panel-title">-->
+                    <!--                                    <a class="d-flex align-items-center" href="#">-->
+                    <!--                                        <img src="images/resources.png">-->
+                    <!--                                        <p class="mb-0 ml-3">Resources</p>-->
+                    <!--                                    </a>-->
+                    <!--                                </div>-->
+                    <!--                                <div class="panel-title">-->
+                    <!--                                    <a class="d-flex align-items-center" href="#">-->
+                    <!--                                        <img src="images/saved.png">-->
+                    <!--                                        <p class="mb-0 ml-3">Saved</p>-->
+                    <!--                                    </a>-->
+                    <!--                                </div>-->
+                  </div>
+                </div>
+              </div>
+              <div class="left-menu h-100" title="Open">
+                <ul class="two mb-0">
+                  <li>
+                    <a href="#" class="mySidebar-toggoler">
+                      <img
+                        src="images/list-arrow.png"
+                        alt="list-arrow"
+                        class="toggoler-img"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="mySidebar-toggoler">
+                      <img src="images/videos.png" class="real-img" />
+                      <img src="images/videos-red.png" class="hover-img" />
+                      <div class="tooltip">videos</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="mySidebar-toggoler">
+                      <img
+                        src="images/market_classifieds.png"
+                        class="real-img"
+                      />
+                      <img
+                        src="images/market_classifieds-red.png"
+                        class="hover-img"
+                      />
+                      <div class="tooltip">Marketplace</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="mySidebar-toggoler">
+                      <img src="images/twitch_stream.png" class="real-img" />
+                      <img
+                        src="images/twitch_stream-red.png"
+                        class="hover-img"
+                      />
+                      <div class="tooltip">Discover</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="mySidebar-toggoler">
+                      <img src="images/entertainment.png" class="real-img" />
+                      <img
+                        src="images/entertainment-red.png"
+                        class="hover-img"
+                      />
+                      <div class="tooltip">Entertainment</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="mySidebar-toggoler">
+                      <img src="images/events.png" class="real-img" />
+                      <img src="images/events-red.png" class="hover-img" />
+                      <div class="tooltip">Followers</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="mySidebar-toggoler">
+                      <img src="images/group_channels.png" class="real-img" />
+                      <img
+                        src="images/group_channels-red.png"
+                        class="hover-img"
+                      />
+                      <div class="tooltip">Events</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="mySidebar-toggoler">
+                      <img src="images/discover_members.png" class="real-img" />
+                      <img
+                        src="images/discover_members-red.png"
+                        class="hover-img"
+                      />
+                      <div class="tooltip">Groups</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="mySidebar-toggoler">
+                      <img src="images/live_stream.png" class="real-img" />
+                      <img src="images/live_stream-red.png" class="hover-img" />
+                      <div class="tooltip">Live Stream</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="mySidebar-toggoler">
+                      <img src="images/pro_services.png" class="real-img" />
+                      <img
+                        src="images/pro_services-red.png"
+                        class="hover-img"
+                      />
+                      <div class="tooltip">Pro Services</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                     <img src="./images/down-arrow.png" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="create-tab">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="create-container position-fixed border py-2">
+                <h3 class="text-dark pl-2">Create</h3>
+                <div class="create-items">
+                  <a
+                    href="#"
+                    class="d-flex align-items-center p-2"
+                    data-toggle="modal"
+                    data-target="#createPostModal"
+                  >
+                    <i
+                      class="far fa-edit rounded-circle bg-white text-center border"
+                    ></i>
+                    <div class="ml-2">
+                      <h5 class="mb-1">Post</h5>
+                      <span>Share a post</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="create-items">
+                  <a href="#" class="d-flex align-items-center p-2">
+                    <i
+                      class="fas fa-book-open rounded-circle bg-white text-center border"
+                    ></i>
+                    <div class="ml-2">
+                      <h5 class="mb-1">Story</h5>
+                      <span>Share your story</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="create-items">
+                  <a
+                    href="groups-members.html"
+                    class="d-flex align-items-center p-2"
+                  >
+                    <i
+                      class="fas fa-users rounded-circle bg-white text-center border"
+                    ></i>
+                    <div class="ml-2">
+                      <h5 class="mb-1">Group</h5>
+                      <span>Connect with people</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="create-items">
+                  <a
+                    href="market-listing.html"
+                    class="d-flex align-items-center p-2"
+                  >
+                    <i
+                      class="fas fa-store rounded-circle bg-white text-center border"
+                    ></i>
+                    <div class="ml-2">
+                      <h5 class="mb-1">Marketplace Listing</h5>
+                      <span>Sell items to people</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="modal status-modal fade"
+              id="createPostModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0">
+                  <div class="modal-header border-0 p-0">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body pt-0">
+                    <div class="form-group w-100 position-relative">
+                      <textarea
+                        class="form-control w-100 h-100 shadow-none m-0"
+                        placeholder="What do you want to share"
+                      ></textarea>
+                      <ul
+                        class="color-plate text-center list-inline mb-0 position-absolute"
+                      >
+                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
+                          <a href="#" class="d-inline-block active"></a>
+                        </li>
+                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
+                          <a href="#" class="d-inline-block"></a>
+                        </li>
+                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
+                          <a href="#" class="d-inline-block"></a>
+                        </li>
+                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
+                          <a href="#" class="d-inline-block"></a>
+                        </li>
+                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
+                          <a href="#" class="d-inline-block"></a>
+                        </li>
+                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
+                          <a href="#" class="d-inline-block"></a>
+                        </li>
+                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
+                          <a href="#" class="d-inline-block"></a>
+                        </li>
+                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
+                          <a href="#" class="d-inline-block"></a>
+                        </li>
+                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
+                          <a href="#" class="d-inline-block"></a>
+                        </li>
+                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
+                          <a href="#" class="d-inline-block"></a>
+                        </li>
+                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
+                          <a href="#" class="d-inline-block"></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="d-inline-block"></a>
+                        </li>
+                      </ul>
+                      <div
+                        class="user-icon rounded-circle overflow-hidden position-absolute"
+                      >
+                        <img
+                          class="w-100 h-100"
+                          src="./images/tanya.png"
+                          alt="tanya"
+                        />
+                      </div>
+                    </div>
+                    <div class="text-muted text-center font-weight-bold">
+                      Drag and drop image/video hera or
+                      <a href="#" class="link">Browse</a>
+                    </div>
+                  </div>
+                  <div
+                    class="modal-footer align-items-center justify-content-center border-0 pt-0"
+                  >
+                    <div>
+                      <div class="input-group">
+                        <select class="custom-select shadow-none">
+                          <option selected>Public Audience</option>
+                          <option value="1">Personal</option>
+                          <option value="2">Friends</option>
+                          <option value="3">Custom</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <a href="#" class="btn-tag rounded d-inline-block"
+                        >Friend Tagging</a
+                      >
+                      <a href="#" class="d-inline-block mx-3"
+                        ><img src="./images/camera3.png" alt="camera3"
+                      /></a>
+
+                      <a
+                        href="#"
+                        class="btn-post d-inline-block text-white rounded"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        >Post</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <div class="col-lg-9 col-sm-8 col-break">
+            <div class="row">
+              <!-- Main Post Section -->
+              <div class="col-md-4 side-fav-menu">
+                <div class="fav-menu-top">
+                  <span>Favorite Moments</span>
+                  <a href="#" type="button" data-toggle="modal" data-target="#exampleModal">Settings</a>
+                  <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+          <div class="row first-row">
+            <div class="col-md-10 col-sm-10 col-10">
+              <p class="modal-title">Alert Settings</p>
+              <p>Control your alerts from your moments achieves on FyreStream</p>
+            </div>
+            <div class="col-md-2 text-right align-items-center col-sm-2 col-2"><i class="far fa-times-circle"></i></div>
+          </div>
+
+          <div class="row second-row">
+            <div class="col-md-10 col-sm-10 col-10">
+              <p class="modal-title">Notifications</p>
+              <p>Select whether you want receive archive alerts by turning it on or off</p>
+            </div>
+            <div class="col-md-2 text-right align-items-center col-sm-2 col-2"><label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-10 col-sm-10 col-10">
+              <p class="modal-title">Active Feed</p>
+              <p>Select whether you want to allow a remainder in your activity feed for something after you have archived them.</p>
+            </div>
+            <div class="col-md-2 text-right align-items-center col-sm-2 col-2"><label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          </div>
+    </div>
+  </div>
+</div>
+                </div>
+                <div class="my-fav-moments align-items-center">
+                  <img src="./images/story.png" alt="" />
+                  <span>My Favorite Moments</span>
+                </div>
+                <hr />
+                <p class="fav-title">Moments Collection</p>
+                <ul>
+                  <li class="align-items-center">
+                    <a href=""
+                      ><img src="./images/square.png" alt="" /> For later</a
+                    >
+                  </li>
+                  <li class="align-items-center">
+                    <a href=""
+                      ><img src="./images/square.png" alt="" /> Law and Order</a
+                    >
+                  </li>
+                  <li class="align-items-center">
+                    <a href=""
+                      ><img src="./images/square.png" alt="" /> Bikini Girls</a
+                    >
+                  </li>
+                </ul>
+                <p class="fav-title">My Moments Activity</p>
+                <ul>
+                  <li class="align-items-center">
+                    <a href=""
+                      ><img src="./images/square.png" alt="" /> Past 30-Days</a
+                    >
+                  </li>
+                </ul>
+                <button>+ Create New Collection</button>
+              </div>
+              <div class="col-md-8 all-saved-moments">
+                <div class="row">
+                  <div class="col-md-12 all-moments-top position-relative">
+                    <span>All</span>
+                    <i class="all-moments-settings fas fa-sliders-h"></i>
+                    <ul class="moment-category-selection">
+                      <li>All</li>
+                      <li>Videos</li>
+                      <li>Photos</li>
+                      <li>uncategorized</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="individual-saved-moment">
+                      <div class="row">
+                        <div class="col-md-3 coll-sm-3 col-3">
+                          <div class="story-bg position-relative">
+                            <img src="./images/view3.png" alt="">
+                            <div class="overlay"></div>
+                            <div class="text-center story-profile position-absolute">
+                              <div class="moments-avatar">
+                                <div class="middle-gap">
+                                    <img src="./images/12.png" alt="red-avtar">
+                                </div>
+                            </div>
+                            <p>User Name</p>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div class="saved-moment-desc col-md-9 col-sm-9 col-9">
+                          <p>The intelligent Legal Research Choice</p>
+                          <p>Video . Posted October 19 2020</p>
+                          <p class="marbot-p">Saved to <a href="">Law and Order</a></p>
+                          <div class="text-center">
+                            <div class="row">
+                              <div class="col-md-8 col-sm-8 col-8">
+                                <a href="" class="add-to-collection"
+                              >Add To Collection</a
+                            >
+                              </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-share"></i
+                            ></a>
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-ellipsis-h"></i
+                            ></a>
+                            </div>
+</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="individual-saved-moment">
+                      <div class="row">
+                        <div class="col-md-3 coll-sm-3 col-3">
+                          <div class="story-bg position-relative">
+                            <img src="./images/view3.png" alt="">
+                            <div class="overlay"></div>
+                            <div class="text-center story-profile position-absolute">
+                              <div class="moments-avatar">
+                                <div class="middle-gap">
+                                    <img src="./images/12.png" alt="red-avtar">
+                                </div>
+                            </div>
+                            <p>User Name</p>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div class="saved-moment-desc col-md-9 col-sm-9 col-9">
+                          <p>The intelligent Legal Research Choice</p>
+                          <p>Video . Posted October 19 2020</p>
+                          <p class="marbot-p">Saved to <a href="">Law and Order</a></p>
+                          <div class="text-center">
+                            <div class="row">
+                              <div class="col-md-8 col-sm-8 col-8">
+                                <a href="" class="add-to-collection"
+                              >Add To Collection</a
+                            >
+                              </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-share"></i
+                            ></a>
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-ellipsis-h"></i
+                            ></a>
+                            </div>
+</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="individual-saved-moment">
+                      <div class="row">
+                        <div class="col-md-3 coll-sm-3 col-3">
+                          <div class="story-bg position-relative">
+                            <img src="./images/view3.png" alt="">
+                            <div class="overlay"></div>
+                            <div class="text-center story-profile position-absolute">
+                              <div class="moments-avatar">
+                                <div class="middle-gap">
+                                    <img src="./images/12.png" alt="red-avtar">
+                                </div>
+                            </div>
+                            <p>User Name</p>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div class="saved-moment-desc col-md-9 col-sm-9 col-9">
+                          <p>The intelligent Legal Research Choice</p>
+                          <p>Video . Posted October 19 2020</p>
+                          <p class="marbot-p">Saved to <a href="">Law and Order</a></p>
+                          <div class="text-center">
+                            <div class="row">
+                              <div class="col-md-8 col-sm-8 col-8">
+                                <a href="" class="add-to-collection"
+                              >Add To Collection</a
+                            >
+                              </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-share"></i
+                            ></a>
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-ellipsis-h"></i
+                            ></a>
+                            </div>
+</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="individual-saved-moment">
+                      <div class="row">
+                        <div class="col-md-3 coll-sm-3 col-3">
+                          <div class="story-bg position-relative">
+                            <img src="./images/view3.png" alt="">
+                            <div class="overlay"></div>
+                            <div class="text-center story-profile position-absolute">
+                              <div class="moments-avatar">
+                                <div class="middle-gap">
+                                    <img src="./images/12.png" alt="red-avtar">
+                                </div>
+                            </div>
+                            <p>User Name</p>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div class="saved-moment-desc col-md-9 col-sm-9 col-9">
+                          <p>The intelligent Legal Research Choice</p>
+                          <p>Video . Posted October 19 2020</p>
+                          <p class="marbot-p">Saved to <a href="">Law and Order</a></p>
+                          <div class="text-center">
+                            <div class="row">
+                              <div class="col-md-8 col-sm-8 col-8">
+                                <a href="" class="add-to-collection"
+                              >Add To Collection</a
+                            >
+                              </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-share"></i
+                            ></a>
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-ellipsis-h"></i
+                            ></a>
+                            </div>
+</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="individual-saved-moment">
+                      <div class="row">
+                        <div class="col-md-3 coll-sm-3 col-3">
+                          <div class="story-bg position-relative">
+                            <img src="./images/view3.png" alt="">
+                            <div class="overlay"></div>
+                            <div class="text-center story-profile position-absolute">
+                              <div class="moments-avatar">
+                                <div class="middle-gap">
+                                    <img src="./images/12.png" alt="red-avtar">
+                                </div>
+                            </div>
+                            <p>User Name</p>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div class="saved-moment-desc col-md-9 col-sm-9 col-9">
+                          <p>The intelligent Legal Research Choice</p>
+                          <p>Video . Posted October 19 2020</p>
+                          <p class="marbot-p">Saved to <a href="">Law and Order</a></p>
+                          <div class="text-center">
+                            <div class="row">
+                              <div class="col-md-8 col-sm-8 col-8">
+                                <a href="" class="add-to-collection"
+                              >Add To Collection</a
+                            >
+                              </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-share"></i
+                            ></a>
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-ellipsis-h"></i
+                            ></a>
+                            </div>
+</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="individual-saved-moment">
+                      <div class="row">
+                        <div class="col-md-3 coll-sm-3 col-3">
+                          <div class="story-bg position-relative">
+                            <img src="./images/view3.png" alt="">
+                            <div class="overlay"></div>
+                            <div class="text-center story-profile position-absolute">
+                              <div class="moments-avatar">
+                                <div class="middle-gap">
+                                    <img src="./images/12.png" alt="red-avtar">
+                                </div>
+                            </div>
+                            <p>User Name</p>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div class="saved-moment-desc col-md-9 col-sm-9 col-9">
+                          <p>The intelligent Legal Research Choice</p>
+                          <p>Video . Posted October 19 2020</p>
+                          <p class="marbot-p">Saved to <a href="">Law and Order</a></p>
+                          <div class="text-center">
+                            <div class="row">
+                              <div class="col-md-8 col-sm-8 col-8">
+                                <a href="" class="add-to-collection"
+                              >Add To Collection</a
+                            >
+                              </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-share"></i
+                            ></a>
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-ellipsis-h"></i
+                            ></a>
+                            </div>
+</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="individual-saved-moment">
+                      <div class="row">
+                        <div class="col-md-3 coll-sm-3 col-3">
+                          <div class="story-bg position-relative">
+                            <img src="./images/view3.png" alt="">
+                            <div class="overlay"></div>
+                            <div class="text-center story-profile position-absolute">
+                              <div class="moments-avatar">
+                                <div class="middle-gap">
+                                    <img src="./images/12.png" alt="red-avtar">
+                                </div>
+                            </div>
+                            <p>User Name</p>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div class="saved-moment-desc col-md-9 col-sm-9 col-9">
+                          <p>The intelligent Legal Research Choice</p>
+                          <p>Video . Posted October 19 2020</p>
+                          <p class="marbot-p">Saved to <a href="">Law and Order</a></p>
+                          <div class="text-center">
+                            <div class="row">
+                              <div class="col-md-8 col-sm-8 col-8">
+                                <a href="" class="add-to-collection"
+                              >Add To Collection</a
+                            >
+                              </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-share"></i
+                            ></a>
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-ellipsis-h"></i
+                            ></a>
+                            </div>
+</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="individual-saved-moment">
+                      <div class="row">
+                        <div class="col-md-3 coll-sm-3 col-3">
+                          <div class="story-bg position-relative">
+                            <img src="./images/view3.png" alt="">
+                            <div class="overlay"></div>
+                            <div class="text-center story-profile position-absolute">
+                              <div class="moments-avatar">
+                                <div class="middle-gap">
+                                    <img src="./images/12.png" alt="red-avtar">
+                                </div>
+                            </div>
+                            <p>User Name</p>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div class="saved-moment-desc col-md-9 col-sm-9 col-9">
+                          <p>The intelligent Legal Research Choice</p>
+                          <p>Video . Posted October 19 2020</p>
+                          <p class="marbot-p">Saved to <a href="">Law and Order</a></p>
+                          <div class="text-center">
+                            <div class="row">
+                              <div class="col-md-8 col-sm-8 col-8">
+                                <a href="" class="add-to-collection"
+                              >Add To Collection</a
+                            >
+                              </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-share"></i
+                            ></a>
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-2">
+                              <a href="" class="moment-share-btn"
+                              ><i class="fas fa-ellipsis-h"></i
+                            ></a>
+                            </div>
+</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+        <!-- Right Sidebar Section -->
+        <aside class="col-lg-1 col-sm-2 pr-0">
+          <div
+            class="post-left post-right d-none d-sm-block position-fixed ml-auto"
+          >
+            <div id="mySidebar1" class="sidebar-right border-left">
+              <div class="fixed-part">
+                <div title="Close" id="myBtn1" class="neew-right">
+                  <span>Community Affairs</span>
+                  <a href="javascript:void(0)" class="right-menu-closebtn">
+                    <img src="images/cross.png" />
+                  </a>
+                </div>
+                <div class="about-list">
+                  <div class="panel-title">
+                    <a class="d-flex align-items-center" href="#">
+                      <img src="images/one.png" class="mr-1" />
+                      <div>
+                        <p class="mb-1 panel-text">
+                          Mike John reacted to your photo
+                        </p>
+                        <small class="mb-0"> March 10 at 9:05PM </small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="panel-title">
+                    <a class="d-flex align-items-center" href="#">
+                      <img src="images/two.png" class="mr-1" />
+                      <div>
+                        <p class="mb-1 panel-text">
+                          Mike John reacted to your photo
+                        </p>
+                        <small class="mb-0"> March 10 at 9:05PM </small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="panel-title">
+                    <a class="d-flex align-items-center" href="#">
+                      <img src="images/three.png" class="mr-1" />
+                      <div>
+                        <p class="mb-1 panel-text">
+                          Mike John reacted to your photo
+                        </p>
+                        <small class="mb-0"> March 10 at 9:05PM </small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="panel-title">
+                    <a class="d-flex align-items-center" href="#">
+                      <img src="images/four.png" class="mr-1" />
+                      <div>
+                        <p class="mb-1 panel-text">
+                          Mike John reacted to your photo
+                        </p>
+                        <small class="mb-0"> March 10 at 9:05PM </small>
+                      </div>
+                    </a>
+                  </div>
+                  <h4 class="contact m-0 py-2">Contacts</h4>
+                  <div class="panel-title">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/five.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="panel-title">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/six.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="panel-title">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/seven.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="panel-title">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/eight.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="panel-title">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/nine.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="panel-title">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/ten.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="panel-title">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/11.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="panel-title">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/12.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                  <div class="panel-title">
+                    <a class="d-flex align-items-center active" href="#">
+                      <img src="images/13.png" class="mr-1" />
+                      <p class="mb-0 panel-text"><b>Katie Daviscourt</b></p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-menu h-100" title="Open">
+              <ul class="right-menu-to-hide two mb-0">
+                <div class="right-side-scroll">
+                  <li>
+                    <a class="img-to-hide" href="#">
+                      <img
+                        src="images/back.png"
+                        alt="back"
+                        class="toggoler-img"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/one.png"
+                        class="menu-pic img-responsive"
+                      />
+                      <div class="show-online"></div>
+                      <div class="menu-pic-notification">
+                        <div class="side-angle"></div>
+                        <b>Sue Ann</b> reacted to your comment: Only the food
+                        die yo..
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/two.png"
+                        class="menu-pic sent-req-img img-responsive"
+                      />
+                      <div class="menu-pic-notification sent-request">
+                        <div class="side-angle"></div>
+                        <b>Sue Ann</b> sent a friend request
+                        <button class="req-accept">Accept</button>
+                        <button class="req-decline">Decline</button>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/three.png"
+                        class="menu-pic img-responsive"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/four.png"
+                        class="menu-pic img-responsive"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/five.png"
+                        class="menu-pic img-responsive"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/six.png"
+                        class="menu-pic img-responsive"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/seven.png"
+                        class="menu-pic img-responsive"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/eight.png"
+                        class="menu-pic img-responsive"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/six.png"
+                        class="menu-pic img-responsive"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/seven.png"
+                        class="menu-pic img-responsive"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/eight.png"
+                        class="menu-pic img-responsive"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/six.png"
+                        class="menu-pic img-responsive"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/seven.png"
+                        class="menu-pic img-responsive"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/eight.png"
+                        class="menu-pic img-responsive"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="images/nine.png"
+                        class="menu-pic img-responsive"
+                      />
+                    </a>
+                  </li>
+                </div>
+                <li>
+                  <a href="#" class="text-center setting-bar">
+                    <i class="fas fa-cog"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="contact-list-toggoler rounded-circle position-fixed d-flex align-items-center justify-content-center"
+          >
+            <a href="#!"><i class="fas fa-plus-circle"></i></a>
+          </div>
+          <div
+            class="contact-list-container position-fixed border w-100 overflow-hidden"
+          >
+            <div
+              class="head d-flex align-items-center justify-content-between bg-white p-2"
+            >
+              <div class="user d-flex align-items-center">
+                <img
+                  src="./images/profile2.png"
+                  alt="profile2"
+                  class="mr-2"
+                />
+                <div>
+                  <h5 class="mb-0 text-dark">Maggla</h5>
+                  <small class="online-status active">Online</small>
+                </div>
+              </div>
+              <a href="#" class="setting"><i class="fas fa-cog"></i></a>
+            </div>
+            <div class="body overflow-auto">
+              <div class="contact-list-items">
+                <a
+                  href="#!"
+                  class="d-flex align-items-center justify-content-between p-2 border-bottom"
+                >
+                  <div class="user d-flex align-items-center">
+                    <img src="./images/one.png" alt="one" class="mr-2" />
+                    <div>
+                      <h5 class="mb-0 text-dark">Jon</h5>
+                      <small class="online-status active">Online</small>
+                    </div>
+                  </div>
+                  <time>10:00 pm</time>
+                </a>
+              </div>
+              <div class="contact-list-items">
+                <a
+                  href="#!"
+                  class="d-flex align-items-center justify-content-between p-2 border-bottom"
+                >
+                  <div class="user d-flex align-items-center">
+                    <img src="./images/two.png" alt="two" class="mr-2" />
+                    <div>
+                      <h5 class="mb-0 text-dark">Rock</h5>
+                      <small class="online-status">Offline</small>
+                    </div>
+                  </div>
+                  <time>12:00 am</time>
+                </a>
+              </div>
+              <div class="contact-list-items">
+                <a
+                  href="#!"
+                  class="d-flex align-items-center justify-content-between p-2 border-bottom"
+                >
+                  <div class="user d-flex align-items-center">
+                    <img src="./images/three.png" alt="three" class="mr-2" />
+                    <div>
+                      <h5 class="mb-0 text-dark">Jasmin</h5>
+                      <small class="online-status">Offline</small>
+                    </div>
+                  </div>
+                  <time>01:00 am</time>
+                </a>
+              </div>
+              <div class="contact-list-items">
+                <a
+                  href="#!"
+                  class="d-flex align-items-center justify-content-between p-2 border-bottom"
+                >
+                  <div class="user d-flex align-items-center">
+                    <img src="./images/one.png" alt="one" class="mr-2" />
+                    <div>
+                      <h5 class="mb-0 text-dark">Jon</h5>
+                      <small class="online-status active">Online</small>
+                    </div>
+                  </div>
+                  <time>10:00 pm</time>
+                </a>
+              </div>
+              <div class="contact-list-items">
+                <a
+                  href="#!"
+                  class="d-flex align-items-center justify-content-between p-2 border-bottom"
+                >
+                  <div class="user d-flex align-items-center">
+                    <img src="./images/two.png" alt="two" class="mr-2" />
+                    <div>
+                      <h5 class="mb-0 text-dark">Rock</h5>
+                      <small class="online-status">Offline</small>
+                    </div>
+                  </div>
+                  <time>12:00 am</time>
+                </a>
+              </div>
+              <div class="contact-list-items">
+                <a
+                  href="#!"
+                  class="d-flex align-items-center justify-content-between p-2 border-bottom"
+                >
+                  <div class="user d-flex align-items-center">
+                    <img src="./images/one.png" alt="one" class="mr-2" />
+                    <div>
+                      <h5 class="mb-0 text-dark">Jon</h5>
+                      <small class="online-status active">Online</small>
+                    </div>
+                  </div>
+                  <time>10:00 pm</time>
+                </a>
+              </div>
+              <div class="contact-list-items">
+                <a
+                  href="#!"
+                  class="d-flex align-items-center justify-content-between p-2 border-bottom"
+                >
+                  <div class="user d-flex align-items-center">
+                    <img src="./images/two.png" alt="two" class="mr-2" />
+                    <div>
+                      <h5 class="mb-0 text-dark">Rock</h5>
+                      <small class="online-status">Offline</small>
+                    </div>
+                  </div>
+                  <time>12:00 am</time>
+                </a>
+              </div>
+              <div class="contact-list-items">
+                <a
+                  href="#!"
+                  class="d-flex align-items-center justify-content-between p-2 border-bottom"
+                >
+                  <div class="user d-flex align-items-center">
+                    <img src="./images/three.png" alt="three" class="mr-2" />
+                    <div>
+                      <h5 class="mb-0 text-dark">Jasmin</h5>
+                      <small class="online-status">Offline</small>
+                    </div>
+                  </div>
+                  <time>01:00 am</time>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Messeger Area -->
+          <div class="messenger-container">
+            <div
+              class="mini-messenger-container rounded-circle position-fixed"
+            >
+              <div
+                class="mini-messenger-content w-100 h-100 position-relative"
+              >
+                <img
+                  src="./images/chatbubble.png"
+                  alt=""
+                  class="chat-bubble"
+                />
+                <span class="plus-five">+5</span>
+                <img src="./images/avtar1.png" alt="12" class="w-100 h-100" />
+                <div
+                  class="mini-messenger-user d-flex align-items-center justify-content-center position-absolute p-2 font-weight-bold rounded-pill"
+                >
+                  Andrew T.
+                </div>
+              </div>
+              <div class="close-btn position-absolute">
+                <i class="fas fa-plus-circle"></i>
+              </div>
+            </div>
+            <div class="messenger-chat border">
+              <div
+                class="messenger-header bg-white border-bottom d-flex align-items-center justify-content-between"
+              >
+                <div class="user d-flex align-items-center p-2">
+                  <img src="./images/avtar1.png" alt="avtar1" />
+                  <div class="ml-2">
+                    <a href="#!" class="font-weight-bold text-dark"
+                      >John Doe</a
+                    >
+                    <br />
+                    <small>Active Now</small>
+                  </div>
+                </div>
+                <div class="message-call-buttons">
+                  <a href="#" class="d-inline-block icons"
+                    ><i class="fas fa-video"></i
+                  ></a>
+                  <a href="#" class="d-inline-block icons ml-1"
+                    ><i class="fas fa-phone-alt"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="d-inline-block icons mini-messenger-toggoler ml-1"
+                    ><i class="fas fa-minus-circle"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="d-inline-block icons close-messenger mx-2"
+                    ><i class="fas fa-times"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="messenger-body overflow-auto p-2">
+                <div class="message-block d-flex align-items-center mb-2">
+                  <img src="./images/12.png" alt="12" />
+                  <div class="message reply ml-2 p-2">
+                    Hi, There.
+                  </div>
+                </div>
+                <div
+                  class="message-block d-flex align-items-center justify-content-end mb-2"
+                >
+                  <div class="message text-white ans mr-2 p-2">
+                    Hello. How are you?
+                  </div>
+                  <!-- <img src="./images/11.png" alt="12"> -->
+                </div>
+                <div class="text-center my-2">
+                  <small>Sun, 22:22 pm</small>
+                </div>
+                <div class="message-block d-flex align-items-center mb-2">
+                  <img src="./images/12.png" alt="12" />
+                  <div class="message reply ml-2 p-2">
+                    Hi, There.
+                  </div>
+                </div>
+                <div
+                  class="message-block d-flex align-items-center justify-content-end mb-2"
+                >
+                  <div class="message text-white ans mr-2 p-2">
+                    Hello. How are you?
+                  </div>
+                  <!-- <img src="./images/11.png" alt="12"> -->
+                </div>
+                <div class="message-block d-flex align-items-center mb-2">
+                  <img src="./images/12.png" alt="12" />
+                  <div class="message reply ml-2 p-2">
+                    Hi, There.
+                  </div>
+                </div>
+                <div
+                  class="message-block d-flex align-items-center justify-content-end mb-2"
+                >
+                  <div class="message text-white ans mr-2 p-2">
+                    Hello. How are you?
+                  </div>
+                  <img src="./images/11.png" alt="12" />
+                </div>
+              </div>
+              <div class="messenger-bottom border-top p-2 align-items-center">
+                <a href="#"><i class="fas fa-plus-circle"></i></a>
+                <a href="#"><i class="far fa-images"></i></a>
+                <a href="#"><i class="fas fa-file-alt"></i></a>
+                <div class="inline-div">
+                  <input type="text" placeholder="Text Here.." /><i
+                    class="far fa-smile"
+                  ></i>
+                </div>
+                <a href="#"><i class="fas fa-play-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <img class="side-bar-reopen" src="images/down-arrow.png" alt="" />
+    <div class="side-bar-reopen-hint">
+      Close Notifications
+    </div>
+    <!-- All Script -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./plugins/slick-slider/js/slick.min.js"></script>
+    <!-- Watched Slider Script -->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName('mySlides');
+        var dots = document.getElementsByClassName('demo');
+        var captionText = document.getElementById('caption');
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/favourite-moments.js"></script>
+  </body>
+</html>
