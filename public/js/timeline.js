@@ -161,18 +161,18 @@ function getPosts(){
                           </div>
                           <div class="commentText">
                               <p class="">${comment.text}`
-                              
+
                               if(user.id == comment.user.id){
                                var data =  data + `<span data-id='${comment.id}' class='commentDeleteButton'> Delete</span>`
                               }
-                              
-                              
+
+
                         var data = data +    `</p> <span class="date sub-text">on ${comment.created_at}</span>
 
                           </div>
                       </li>`
                   }
-                     
+
                var data = data +   ` </ul>
                   <form class="form-inline" role="form">
                       <div class="form-group">
@@ -194,7 +194,7 @@ function getPosts(){
       error: function(e){
           console.log(e);
       }
-      
+
 
   })
 }
@@ -206,11 +206,11 @@ function getPosts(){
         var file = $(this)[0].files[0];
         formData.append('post_file', file);
     });
-  
+
 
 $('#sharePostSubmit, #sharePostSubmitMoment').on('click', function(){
    if(text.val() != ''){
-      formData.append('post_text', text.val());  
+      formData.append('post_text', text.val());
    }
 
    if($('#file')[0].files.length != 0 || text.val() != '') {
@@ -228,14 +228,14 @@ $('#sharePostSubmit, #sharePostSubmitMoment').on('click', function(){
          formData = new FormData();
          text.val('');
          $('#file').val('');
-        
+
       },
       error: function(data){
-         console.log(data);         
+         console.log(data);
        }
      });
    }
-   
+
 })
 
 // Comment js
@@ -249,8 +249,8 @@ $('body').on('click', '.commentDeleteButton', function (e) {
   $.ajax({
          type:'delete',
          url: '/comments/'+comment_id,
-         success: function(response){ 
-             console.log(self)               
+         success: function(response){
+             console.log(self)
           self.parent().parent().parent().html(response);
          }
      })
@@ -278,8 +278,8 @@ $('body').on('click', '.submitComment', function (e) {
                           </div>
                       </li>`;
               $('.pushComment-'+ post_id).append(data);
-              text.val('');        
-              
+              text.val('');
+
          }
      })
 });
@@ -297,12 +297,12 @@ $.ajax({
   url: '/getLike',
   success: function(data){
       $.each(data, function(i,v){
-          $.each($('.like-btn'),function(){             
+          $.each($('.like-btn'),function(){
              if(v.post_id === $(this).parent().parent().data('id') && v.reaction == 1){
               $('[data-id="'+v.post_id+'"]').find('i').addClass('text-primary')
-             }        
-              
-          })        
+             }
+
+          })
 
       })
   }
@@ -312,7 +312,7 @@ $.ajax({
 $('body').on('click', '.like-btn', function () {
   var post_id = $(this).parent().parent().data('id');
   $(this).find('i').toggleClass('text-primary');
-  
+
   var reaction;
 
   if($(this).find('i').hasClass('text-primary')){
@@ -350,7 +350,7 @@ $('body').on('click','.dropdown-toggle', function(){
         }
 
     })
-   
+
 })
 
 // Follower js
@@ -361,15 +361,15 @@ $.ajax({
     success: function(data){
         $.each(data, function(i,v){
             console.log(data)
-            $.each($('.addFriendButton'),function(){             
+            $.each($('.addFriendButton'),function(){
                if(v.following_id === $(this).data('id') && v.status == 0){
                     $(this).text('Request Sent');
-               }  
+               }
                if(v.following_id === $(this).data('id') && v.status == 1){
                 $(this).text('Following');
-               }  
-            })        
-  
+               }
+            })
+
         })
     }
 })
@@ -396,12 +396,12 @@ $('body').on('click', '.acceptFollowBtn', function(e){
     var action = $(this).data('action');
     var self = $(this);
     console.log(action);
-    
+
     $.ajax({
         type: 'post',
         url:'/followersMarkAsRead',
         data: {follow_id: follow_id,action:action},
-        success: function(data){          
+        success: function(data){
             self.parent().text(data);
         }
 
@@ -453,19 +453,21 @@ function chatOpen(){
      type:'get',
      success : function(data){
           $.each(data, function(i,v){
-          var  html =   `<li data-id='${v.id}' class='chatOpen'>
+              if(v.id !== user.id) {
+                  var html = `<li data-id='${v.id}' class='chatOpen'>
                  <a href="#" >
                      <img src="dist/img/user-data/profile/${v.profile}" class="menu-pic img-responsive">`
 
-                     if(v.is_online ==='1'){
-                      html = html+  `<div class="show-online"></div>`
-                     }
+                  if (v.is_online === '1') {
+                      html = html + `<div class="show-online"></div>`
+                  }
 
-                     html = html+   `</a> </li>`;
-                     console.log(v)
-                     $('#showChatUserList').append(html);
-            
-        })   
+                  html = html + `</a> </li>`;
+                  console.log(v)
+                  $('#showChatUserList').append(html);
+              }
+
+        })
      }
  })
 
@@ -477,11 +479,11 @@ function chatOpen(){
      e.preventDefault();
      var id = $(this).parent().data('id');
      getMessage(id)
-    
+
  })
 
  function getMessage(id){
-    
+
     $.ajax({
         type: 'get',
         url: '/getMessage/'+id,
@@ -517,15 +519,15 @@ function chatOpen(){
                <div class="message-call-buttons">
                    <a href="#" class="d-inline-block icons"><i class="fas fa-video"></i></a>
                    <a href="#" class="d-inline-block icons ml-1"><i class="fas fa-phone-alt"></i></a>
-                
+
                    <a href="#" class="d-inline-block icons close-messenger mx-2"><i class="fas fa-times"></i></a>
                </div>
            </div>
            <div class="messenger-body overflow-auto p-2">`
-           
+
           $.each(data.message, function(i,v){
-           
-          if(v.from_id != user.id){ 
+
+          if(v.from_id != user.id){
           html = html + `<div class="message-block d-flex align-items-center mb-2">
                    <img  width='50px' height='50px' src="./dist/img/user-data/profile/${v.user.profile}" alt="12">
                    <div class="message reply ml-2 p-2">
@@ -539,9 +541,9 @@ function chatOpen(){
                    </div>
                    <img width='50px' src="./dist/img/user-data/profile/${v.user.profile}" alt="12">
                </div>`
-          }   
-                       
-           }) 
+          }
+
+           })
 
 
      html = html+ `</div>
@@ -553,9 +555,9 @@ function chatOpen(){
                <a href="#" data-id='${id}'  class='sendMessageButton'><i class="fas fa-play-circle"></i></a>
            </div>
        </div>`;
-          
+
           $('.messenger-container').append(html);
-            
+
         }
     })
  }
@@ -617,15 +619,15 @@ function chatOpen(){
  })
 
 
- 
+
 
 
 
  $('body').on('click', '.close-messenger', function(){
     $('.messenger-container').empty();
-    
+
  })
- 
+
 
 
 

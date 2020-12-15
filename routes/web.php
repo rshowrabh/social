@@ -12,15 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('admin');
 
 
-Route::get('/timeline', 'Frontend\TimelineController@index')->name('timeline');
+Route::get('/timeline', 'Frontend\TimelineController@index')->name('timeline')->middleware('auth');
 Route::get('/profile', 'Frontend\TimelineController@profile')->name('my.profile');
 
 

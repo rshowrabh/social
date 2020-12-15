@@ -10,24 +10,23 @@ use App\Message;
 
 
 class MessagesController extends Controller
-{ 
+{
     public function getContacts(){
         $id = auth()->user()->id;
-        $following = Follower::where('user_id', $id)->orWhere('following_id', $id)->distinct()->select('id','status')->get();
-          $contacts = [];
-         
-          foreach ($following as $key => $value) {
-              if($value->status == 1){
-             $contacts[] = User::findOrFail($value->id);
-              }
-          }
+        $contacts  = User::whereHas('follower', function ($q)  {
+           $q->where('following_id', auth()->id());
+           $q->orWhere('user_id', auth()->id());
+        })->orWhereHas('following', function ($q)  {
+            $q->where('following_id', auth()->id());
+            $q->orWhere('user_id', auth()->id());
+        })
+            ->get();
 
         return response()->json($contacts);
     }
 
     public function index($id){
         $user = auth()->user();
-
         $toUser = User::find($id);
 
        // mark all messages with the selected contact as read
@@ -40,7 +39,7 @@ class MessagesController extends Controller
        })->orWhere(function($q) use ($id) {
            $q->where('from_id', $id);
            $q->where('to_id', auth()->id());
-       })->with('user')
+       })->latest()->with('user')
        ->get();
 
        return response()->json(['message' => $messages, 'user' => $toUser]);
@@ -57,7 +56,10 @@ class MessagesController extends Controller
 
     public function get(){
         // get all users except the authenticated one
-        $contacts = User::where('id', '!=', auth()->id())->get();
+        $contacts = User::where('id','!=', auth()->id())->whereHas('messages', function($q){
+            $q->where('from_id', auth()->id());
+            $q->orWhere('to_id', auth()->id());
+        })->get();
 
         // get a collection of items where sender_id is the user who sent us a message
         // and messages_count is the number of unread messages we have from_id him
@@ -65,10 +67,11 @@ class MessagesController extends Controller
             ->where('to_id', auth()->id())
             ->where('is_read', false)
             ->groupBy('from_id')
+            ->take(10)
             ->get();
 
-        // add an unread key to each contact with the count of unread messages
-        $contacts = $contacts->map(function($contact) use ($unreadIds) {
+          // add an unread key to each contact with the count of unread messages
+        $contacts->user = $contacts->map(function($contact) use ($unreadIds) {
             $contactUnread = $unreadIds->where('sender_id', $contact->id)->first();
 
             $contact->unread = $contactUnread ? $contactUnread->messages_count : 0;

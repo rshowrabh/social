@@ -22,11 +22,11 @@
                                 class="fas text-danger fa-search"></i></button>
 
                                   <div id='searchArea' class="dropdown position-absolute" aria-labelledby="dropdownMenuLink">
-                                       
+
                                      </div>
-                                
+
                     </form>
-                    
+
                     <ul class="navbar-nav flex-row justify-content-around my-3 my-lg-0 ml-auto notification-icons">
                         <!-- <li class="nav-item dropdown mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-toggle="dropdown"
@@ -113,7 +113,7 @@
                                     </div>
                                 </div>
                                 @endforeach
-                                
+
                                 <div class="dropdown-footer text-center py-2 rounded-bottom">
                                     <a href="#" class="d-inline-block text-dark">View All</a>
                                 </div>
@@ -142,7 +142,7 @@
                                 <div class="dropdown-menu-head rounded-top p-2 text-white d-flex align-items-center position-relative">
                                     <a href="#"><i class="fas fa-cog mr-2"></i></a>Notification
                                 </div>
-                                
+
                                 @foreach(auth()->user()->unreadNotifications->take(3) as $noti)
                                 <div class="dropdown-menu-content d-flex align-items-center p-2 mb-1">
                                     <div class="mr-2">
@@ -157,7 +157,7 @@
                                              @else
                                              <span>comment on your post</span>
                                             @endif
-                                            
+
                                         </a>
                                         <div>
                                             <small class="text-muted">{{$noti->created_at->diffForHumans()}}</small>
@@ -165,7 +165,33 @@
                                     </div>
                                 </div>
                                 @endforeach
-                                
+
+                                <div class="dropdown-footer text-center py-2 rounded-bottom">
+                                    <a href="#" class="d-inline-block text-dark">View All</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown mx-1">
+                            <a class="nav-link dropdown-toggle"  role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                <div class="notify">
+                                    <small id='messageCount'>0</small>
+                                </div>
+
+                                <img src="./images/message-icon.png" class="top-notification-pic" alt="">
+                                <img src="./images/message-icon.png" class="top-notification-pic-hover" alt="">
+                            </a>
+                            <div class="dropdown-menu notify-dropdown-menu py-0 rounded border-0 position-absolute"
+                                 aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu-head rounded-top p-2 text-white d-flex align-items-center position-relative">
+                                    <a href="#"><i class="fas fa-cog mr-2"></i></a>Messages
+                                </div>
+
+                                <div id="plusIconAppend">
+
+                                </div>
+
                                 <div class="dropdown-footer text-center py-2 rounded-bottom">
                                     <a href="#" class="d-inline-block text-dark">View All</a>
                                 </div>

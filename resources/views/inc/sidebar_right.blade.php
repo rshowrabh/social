@@ -118,18 +118,10 @@
             </ul>
         </div>
     </div>
-    <div class="contact-list-toggoler rounded-circle position-fixed d-flex align-items-center justify-content-center">
-        <a href="#!"><i class="fas fa-plus-circle"></i> <small id='messageCount' class='text-danger position-absolute'></small>    </a>
-    </div>
 
-    <div class="contact-list-container position-fixed border w-100 overflow-hidden">
-      
-          <div id='plusIconAppend' class="body overflow-auto">
-            
-        </div>
-    </div>
+
     <!-- Messeger Area -->
     <div class="messenger-container">
-        
+
     </div>
 </aside>
